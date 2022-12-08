@@ -1,0 +1,27 @@
+.map__wrapper {
+  display: flex;
+  padding: 26px 0;
+}
+
+.map__heading {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  width: 50%;
+}
+
+.map__adress {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  width: 50%;
+}

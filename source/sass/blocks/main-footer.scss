@@ -1,0 +1,34 @@
+.main-footer {
+  background: hsl(0, 0%, 95%);
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0 72px 42px 72px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
