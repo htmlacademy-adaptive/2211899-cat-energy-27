@@ -1,0 +1,116 @@
+.catalog-container__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.catalog {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.catalog__item:not(:last-of-type) {
+  margin-bottom: 33px;
+}
+
+.catalog__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__specifications {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__wrapper {
+  display: flex;
+}
+
+.catalog__wrapper-item {
+  width: 50%;
+}
+
+.catalog__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+  width: 280px;
+  min-height: 40px;
+  background: hsl(97, 53%, 47%);
+  border: none;
+}
+
+.more {
+  margin-bottom: 50px;
+}
+
+.more__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.more__discription {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
+  color: #444444;
+}
+
+.more__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #444444;
+  width: 280px;
+  min-height: 40px;
+  border: none;
+  background: #F2F2F2;
+}

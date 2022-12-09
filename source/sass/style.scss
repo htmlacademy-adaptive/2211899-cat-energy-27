@@ -8,6 +8,8 @@
 @use "./blocks/map.scss";
 @use "./blocks/main-footer.scss";
 @use "./blocks/request.scss";
+@use "./blocks/catalog-container.scss";
+@use "./blocks/additional.scss";
 
 body {
   max-width: 320px;
