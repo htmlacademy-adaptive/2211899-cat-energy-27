@@ -1,10 +1,16 @@
+.advantages {
+  padding: 20px 20px 50px 20px;
+}
+
 .advantages__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .works-list {
@@ -27,7 +33,7 @@
   min-height: 60px;
   margin-right: 20px;
   background-image: url("..img/main-container/promo/sheet.svg");
-  background-color: #68B738;
+  background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
 }

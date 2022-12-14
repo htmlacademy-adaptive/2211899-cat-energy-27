@@ -1,10 +1,10 @@
 .map__wrapper {
   display: flex;
-  padding: 26px 0;
+  padding: 26px 20px;
 }
 
 .map__heading {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16,7 +16,7 @@
 }
 
 .map__adress {
-  font-family: 'Lato';
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
