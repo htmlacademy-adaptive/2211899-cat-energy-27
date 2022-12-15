@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .example {
   background: $basic-gray-color;
   padding: 25px 20px 40px 20px;

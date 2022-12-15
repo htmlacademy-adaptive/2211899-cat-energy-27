@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .form__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -61,6 +63,7 @@
   color: $grey-color;
   padding: 0 20px;
   height: 45px;
+  border: 1px solid #e7e7e7;
 }
 
 .form__contact {
@@ -93,4 +96,5 @@
   max-width: 270px;
   min-height: 150px;
   padding: 10px 12px 0 15px;
+  border: 1px solid #e8e8e8;
 }

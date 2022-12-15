@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .main-footer {
   background: $basic-gray-color;
   padding: 40px 20px 22px 20px;
@@ -9,25 +11,7 @@
   margin-bottom: 52px;
 }
 
-.social__list {
-  display: flex;
-  justify-content: space-between;
-  width: 132px;
-  margin: 0 72px 42px 72px;
-  padding: 0;
-  list-style-type: none;
-}
-
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
-}
-
-.copyright__text {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: $grey-color;
 }

@@ -1,0 +1,27 @@
+@use "./variables.scss" as *;
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+}
+
+.site-list__item:not(:last-of-type) {
+  margin-bottom: 46px;
+}
+
+.site-list__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+  text-decoration: none;
+}

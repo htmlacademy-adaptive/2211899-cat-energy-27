@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .promo__wrapper {
   position: relative;
   display: flex;
@@ -7,12 +9,13 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: linear-gradient($main-color, $main-color), url("../img/main-nav/index-background-desktop.png");
+    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-nav/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
     height: 302px;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     top: 0;
   }
 }
@@ -56,11 +59,12 @@
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 20px;
+  margin-bottom: 20px;
   color: $white-color;
   min-height: 40px;
   background: $main-color;

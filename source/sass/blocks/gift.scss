@@ -1,0 +1,36 @@
+@use "./variables.scss" as *;
+
+.gift {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/cat.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 290px;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+  }
+}
+
+.gift svg {
+  margin: 58px auto 48px auto;
+}
+
+.gift__discription {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white-color;
+  text-align: center;
+  margin: 0;
+}

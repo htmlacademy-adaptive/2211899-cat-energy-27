@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .additional {
   padding: 0 20px 54px 20px;
 }
@@ -10,38 +12,4 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 49px;
-}
-
-.gift {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 290px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: linear-gradient($main-color, $main-color), url("../img/main-container/cat.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 290px;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-  }
-}
-
-.gift svg {
-  margin: 58px auto 48px auto;
-}
-
-.gift__discription {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: $white-color;
-  text-align: center;
-  margin: 0;
 }

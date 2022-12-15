@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .more {
   padding-bottom: 50px;
 }
@@ -42,4 +44,5 @@
   min-height: 40px;
   border: none;
   background: $basic-gray-color;
+  width: 100%;
 }

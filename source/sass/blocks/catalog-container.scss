@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 .catalog-container {
   padding: 0 20px;
 }
@@ -48,24 +50,4 @@
 
 .catalog__wrapper-item {
   width: 50%;
-}
-
-.catalog__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  color: $white-color;
-  min-height: 40px;
-  background: $main-color;
-  border: none;
 }
