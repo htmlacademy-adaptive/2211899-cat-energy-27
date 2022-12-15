@@ -10,23 +10,11 @@
 @use "./blocks/request.scss";
 @use "./blocks/catalog-container.scss";
 @use "./blocks/additional.scss";
-
-body {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@use "./blocks/global.scss";
+@use "./blocks/variables.scss";
+@use "./blocks/more.scss";
+@use "./blocks/product-list.scss";
+@use "./blocks/form.scss";
+@use "./blocks/aditionaly-list.scss";
+@use "./blocks/program-list.scss";
+@use "./blocks/advantages-list.scss";

@@ -1,0 +1,45 @@
+.more {
+  padding-bottom: 50px;
+}
+
+.more__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.more__discription {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
+  color: $grey-color;
+}
+
+.more__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: $grey-color;
+  min-height: 40px;
+  border: none;
+  background: $basic-gray-color;
+}

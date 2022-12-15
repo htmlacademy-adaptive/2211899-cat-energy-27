@@ -1,5 +1,4 @@
 .main-header {
-  width: 280px;
   padding: 10px 20px 18px 10px;
   margin: 0;
 }
@@ -14,10 +13,10 @@
 .main-header__logo {
   display: flex;
   align-items: center;
-}
 
-.main-header__logo-cat {
-  margin-right: auto;
+  :last-of-type {
+    margin-left: 56px;
+  }
 }
 
 .main-header__button {

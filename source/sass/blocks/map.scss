@@ -10,18 +10,18 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $black-color;
   margin: 0;
   width: 50%;
 }
 
-.map__adress {
+.map__address {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: #444444;
+  color: $black-color;
   margin: 0;
   width: 50%;
 }

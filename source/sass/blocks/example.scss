@@ -1,5 +1,5 @@
 .example {
-  background: #ebebeb;
+  background: $basic-gray-color;
   padding: 25px 20px 40px 20px;
 }
 
@@ -16,7 +16,7 @@
 
 .example__paragraph {
   margin: 0;
-  color: #444444;
+  color: $grey-color;
 }
 
 .example__list {
@@ -31,7 +31,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black-color;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -39,7 +39,7 @@
 .example__description {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $grey-color;
   margin: 0;
   text-align: center;
 }
@@ -53,5 +53,5 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black-color;
 }

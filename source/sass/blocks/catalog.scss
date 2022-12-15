@@ -7,7 +7,7 @@
   flex-direction: column;
   min-height: 270px;
   padding: 21px 33px 18px 20px;
-  background: #f2f2f2;
+  background: $basic-gray-color;
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
@@ -22,14 +22,14 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black-color;
   margin: 0;
   margin-bottom: 29px;
 }
 
 .catalog__description {
   width: 228px;
-  color: #444444;
+  color: $grey-color;
   margin: 0;
   margin-bottom: 38px;
 }
@@ -46,5 +46,5 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black-color;
 }

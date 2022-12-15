@@ -1,0 +1,25 @@
+.program-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.program-list__item {
+  margin-bottom: 14px;
+}
+
+.program-list__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.program-list__input {
+  margin: 0;
+  margin-right: 15px;
+}

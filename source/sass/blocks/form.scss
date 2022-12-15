@@ -1,0 +1,96 @@
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: $black-color;
+  margin: 0;
+  margin-bottom: 38px;
+  padding-top: 26px;
+}
+
+.form__paragraph {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-color;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.form__main-information {
+  margin-bottom: 46px;
+}
+
+.form__input-wrapper {
+  padding: 0;
+  border: 0;
+}
+
+.form__main-item {
+  display: flex;
+  margin: 0;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.form__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin-right: 13px;
+}
+
+.form__input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  padding: 0 20px;
+  height: 45px;
+}
+
+.form__contact {
+  margin-bottom: 24px;
+}
+
+.form__contact-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black-color;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.form__comment {
+  margin-bottom: 23px;
+}
+
+.form__input-comment {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-color;
+  max-width: 270px;
+  min-height: 150px;
+  padding: 10px 12px 0 15px;
+}

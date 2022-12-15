@@ -1,0 +1,24 @@
+
+.additionally-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additionally-list__item {
+  margin-bottom: 14px;
+}
+
+.additionally-list__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-color;
+  text-transform: uppercase;
+}
+
+.additionally-list__input {
+  margin-right: 16px;
+}

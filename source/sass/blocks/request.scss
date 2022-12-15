@@ -4,158 +4,7 @@
 }
 
 .wrapper--gray {
-  background: #f2f2f2;
-}
-
-.form__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 38px;
-  padding-top: 26px;
-}
-
-.form__paragraph {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-.form__main-information {
-  margin-bottom: 46px;
-}
-
-.form__input-wrapper {
-  padding: 0;
-  border: 0;
-}
-
-.form__main-item {
-  display: flex;
-  margin: 0;
-  margin-bottom: 14px;
-  align-items: center;
-}
-
-.form__label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-  margin-right: 13px;
-}
-
-.form__input {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #444444;
-  padding: 0 20px;
-  height: 45px;
-}
-
-.form__contact {
-  margin-bottom: 24px;
-}
-
-.program-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-.program-list__item {
-  margin-bottom: 14px;
-}
-
-.program-list__label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.program-list__input {
-  margin: 0;
-  margin-right: 15px;
-}
-
-.form__contact-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 35px;
-}
-
-.form__comment {
-  margin-bottom: 23px;
-}
-
-.form__input-comment {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-  max-width: 270px;
-  min-height: 150px;
-  padding: 10px 12px 0 15px;
-}
-
-.additionally-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.additionally-list__item {
-  margin-bottom: 14px;
-}
-
-.additionally-list__label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.additionally-list__input {
-  margin-right: 16px;
-}
-
-.form__additionally {
-  margin-bottom: 34px;
+  background: $basic-gray-color;
 }
 
 .request__button {
@@ -172,10 +21,9 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 20px;
-  color: #ffffff;
-  width: 280px;
+  color: $white-color;
   min-height: 40px;
-  background: #69b738;
+  background: $main-color;
   border: none;
 }
 
@@ -185,7 +33,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #000000;
+  color: $black-color;
   text-align: center;
   margin: 0;
 }
