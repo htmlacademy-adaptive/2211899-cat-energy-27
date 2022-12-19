@@ -17,6 +17,15 @@
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .main-header {
+    display: flex;
+  }
+
+  .main-header__button {
+    display: none;
+  }
+}
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -46,6 +55,12 @@
   margin-top: 46px;
 }
 
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    margin: 0;
+  }
+}
 .promo__wrapper {
   position: relative;
   display: flex;
@@ -80,7 +95,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   text-align: center;
   color: #ffffff;
 }
@@ -90,30 +105,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
 }
 
-.promo__button-choose {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  min-height: 40px;
-  background: #68b738;
-  border: none;
+.promo button {
+  width: 280px;
 }
 
 .catalog_container {
@@ -160,7 +159,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 114%;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -175,7 +174,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 111%;
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
@@ -191,7 +190,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 111%;
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
@@ -213,7 +212,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 100%;
   color: #000000;
   text-align: center;
   margin-bottom: 8px;
@@ -221,7 +220,7 @@
 
 .example__description {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 100%;
   color: #444444;
   margin: 0;
   text-align: center;
@@ -233,7 +232,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 143%;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -249,7 +248,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 143%;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
@@ -261,7 +260,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 125%;
   color: #000000;
   margin: 0;
   width: 50%;
@@ -297,7 +296,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 114%;
   color: #000000;
   text-align: center;
   margin: 0;
@@ -312,7 +311,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   color: #000000;
   margin: 0;
   margin-bottom: 50px;
@@ -334,7 +333,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 143%;
   text-transform: uppercase;
 }
 
@@ -343,7 +342,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 114%;
   color: #444444;
 }
 
@@ -364,7 +363,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 150%;
   margin: 0;
   margin-bottom: 49px;
 }
@@ -398,7 +397,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   text-align: center;
   margin: 0;
   margin-bottom: 8px;
@@ -409,7 +408,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 133%;
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
@@ -425,7 +424,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
@@ -451,7 +450,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 133%;
   text-transform: uppercase;
   color: #000000;
 }
@@ -466,7 +465,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #444444;
   margin: 0;
 }
@@ -476,7 +475,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 100%;
   color: #000000;
   margin: 0;
   margin-bottom: 38px;
@@ -488,7 +487,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 129%;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
@@ -516,7 +515,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 129%;
   text-transform: uppercase;
   color: #444444;
   margin-right: 13px;
@@ -527,7 +526,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 129%;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -546,7 +545,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 108%;
   color: #000000;
   margin: 0;
   margin-bottom: 35px;
@@ -561,7 +560,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 112%;
   text-transform: uppercase;
   color: #000000;
   max-width: 270px;
@@ -585,7 +584,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 129%;
   color: #000000;
   text-transform: uppercase;
 }
@@ -610,7 +609,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 129%;
   text-transform: uppercase;
   color: #000000;
 }
@@ -660,7 +659,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 143%;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
@@ -691,7 +690,7 @@ body {
   top: 0;
 }
 
-.gift svg {
+.gift img {
   margin: 58px auto 48px auto;
 }
 
@@ -700,7 +699,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -717,18 +716,42 @@ body {
   justify-content: center;
 }
 
-.site-list__item:not(:last-of-type) {
-  margin-bottom: 46px;
+@media (min-width: 320px) {
+  .site-list__item:not(:last-of-type) {
+    margin-bottom: 46px;
+  }
 }
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
+  .site-list__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 35px;
+  }
+}
 .site-list__link {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 143%;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0 72px 42px 72px;
+  padding: 0;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
