@@ -1,0 +1,21 @@
+@use "./variables.scss" as *;
+
+.request {
+  padding: 0 20px 32px 20px;
+  margin: 0;
+}
+
+.wrapper--gray {
+  background: $basic-gray-color;
+}
+
+.request__info {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: $black-color;
+  text-align: center;
+  margin: 0;
+}

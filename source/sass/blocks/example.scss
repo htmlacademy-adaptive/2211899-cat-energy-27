@@ -1,0 +1,59 @@
+@use "./variables.scss" as *;
+
+.example {
+  background: $basic-gray-color;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 111%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__paragraph {
+  margin: 0;
+  color: $grey-color;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.example__number {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: $black-color;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 100%;
+  color: $grey-color;
+  margin: 0;
+  text-align: center;
+}
+
+.example__expenses {
+  margin: 0 auto 20px auto;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black-color;
+}

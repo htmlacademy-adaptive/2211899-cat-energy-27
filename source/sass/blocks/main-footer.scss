@@ -1,0 +1,17 @@
+@use "./variables.scss" as *;
+
+.main-footer {
+  background: $basic-gray-color;
+  padding: 40px 20px 22px 20px;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,29 @@
+@use "./variables.scss" as *;
+
+.map__wrapper {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.map__heading {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: $black-color;
+  margin: 0;
+  width: 50%;
+}
+
+.map__address {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: $black-color;
+  margin: 0;
+  width: 50%;
+}

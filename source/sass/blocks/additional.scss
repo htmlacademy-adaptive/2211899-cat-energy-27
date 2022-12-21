@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+.additional {
+  padding: 0 20px 54px 20px;
+}
+
+.additional__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 49px;
+}

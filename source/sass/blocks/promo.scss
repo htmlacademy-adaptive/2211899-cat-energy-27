@@ -1,0 +1,119 @@
+@use "./variables.scss" as *;
+
+.promo {
+  padding: 0;
+}
+
+.promo__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-nav/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 302px;
+    width: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+}
+
+.promo__text-container {
+  position: relative;
+  min-height: 302px;
+}
+
+.promo__wrapper img {
+  display: block;
+  margin: -130px auto 0 auto;
+}
+
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: $white-color;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 27px;
+}
+
+.promo__intro {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white-color;
+  margin: 0;
+}
+
+.promo__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 0 30px 0 30px;
+  }
+
+  .promo__wrapper {
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__text-container {
+    min-height: 0;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 100%;
+    text-align: left;
+    color: $black-color;
+    padding-left: 90px;
+    margin-bottom: 41px;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .promo__intro {
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: left;
+    color: $black-color;
+    padding-left: 90px;
+    margin-bottom: 49px;
+    order: 2;
+  }
+
+  .promo__wrapper img {
+    display: block;
+    margin: -65px auto 0 auto;
+    width: 609px;
+    height: 509px;
+    order: 4;
+    z-index: -1;
+  }
+
+  .promo .button {
+    margin: 0;
+    margin-left: 90px;
+    order: 3;
+  }
+}
