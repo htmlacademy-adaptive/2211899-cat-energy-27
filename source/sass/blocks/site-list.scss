@@ -9,26 +9,12 @@
 .site-list__item {
   display: flex;
   justify-content: center;
-}
+  align-items: center;
+  height: 66px;
+  border-top: 1px solid $basic-gray-color;
 
-@media (min-width: $phone-width) {
-  .site-list__item:not(:last-of-type) {
-    margin-bottom: 46px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .site-list__item {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    margin-right: 35px;
+  &:last-of-type {
+    border-bottom: 1px solid $basic-gray-color;
   }
 }
 
@@ -42,3 +28,4 @@
   color: $black-color;
   text-decoration: none;
 }
+
