@@ -3,6 +3,10 @@
 .map__wrapper {
   display: flex;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 70px;
+  }
 }
 
 .map__heading {
@@ -15,6 +19,11 @@
   color: $black-color;
   margin: 0;
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 .map__address {
@@ -23,7 +32,13 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 125%;
-  color: $black-color;
   margin: 0;
   width: 50%;
+  color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 125%;
+  }
 }

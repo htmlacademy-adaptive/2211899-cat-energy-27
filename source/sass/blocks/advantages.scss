@@ -2,6 +2,14 @@
 
 .advantages {
   padding: 20px 20px 50px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 90px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1225px;
+  }
 }
 
 .advantages__title {
@@ -13,4 +21,14 @@
   color: $black-color;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 100%;
+  }
 }

@@ -1,5 +1,12 @@
 @use "./variables.scss" as *;
 
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0;
+  }
+}
+
 .main-nav__list {
   display: none;
   position: absolute;
@@ -8,6 +15,11 @@
   left: 0;
   top: 100%;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: inherit;
+  }
 }
 
 .main-nav__button {
@@ -28,12 +40,8 @@
     background-image: url("../img/main-header/menu.svg");
     background-position: center;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-    margin: 0;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
-
