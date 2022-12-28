@@ -7,6 +7,12 @@
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 80px;
+    max-width: 425px;
+    max-height: 86px;
+  }
 }
 
 .map__heading {
@@ -27,6 +33,8 @@
 }
 
 .map__address {
+  display: flex;
+  flex-direction: column;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -40,5 +48,19 @@
     text-align: end;
     font-size: 16px;
     line-height: 125%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+.map__address-wrapper {
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-bottom: 19px;
+    }
   }
 }

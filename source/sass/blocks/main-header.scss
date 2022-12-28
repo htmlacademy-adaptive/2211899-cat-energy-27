@@ -10,6 +10,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 24px 30px 64px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 111px 110px;
   }
 }
 
@@ -26,24 +32,17 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 30px 64px 30px;
-  }
-
-  .main-header__button {
-    display: none;
-  }
-
-  .main-header__logo-image {
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
     &:last-of-type {
       margin-left: 12px;
     }
   }
+}
 
-  .main-header__wrapper {
+.main-header__wrapper {
+  @media (min-width: $tablet-width) {
     max-width: 174px;
   }
 }
+

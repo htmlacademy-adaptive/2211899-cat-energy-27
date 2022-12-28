@@ -1,18 +1,25 @@
 @use "./variables.scss" as *;
 
-.catalog_container {
+.main-container__catalog {
   padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 110px;
+  }
 }
 
 .catalog__program {
-  display: flex;
-  flex-direction: column;
   min-height: 270px;
   padding: 21px 33px 18px 20px;
   background: $basic-gray-color;
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -65,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 558px;
+    min-width: 450px;
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 23px;

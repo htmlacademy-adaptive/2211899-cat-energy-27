@@ -20,6 +20,10 @@
     display: flex;
     position: inherit;
   }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
 }
 
 .main-nav__button {
