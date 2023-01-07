@@ -10,6 +10,20 @@
   margin: 0;
   margin-bottom: 38px;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 54px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 56px;
+    padding-top: 0;
+  }
 }
 
 .form__paragraph {
@@ -22,15 +36,53 @@
   color: $black-color;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 66px;
+    max-width: 323px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 66px;
+    max-width: 323px;
+  }
+}
+
+.form__main-wrapper {
+  display: flex;
 }
 
 .form__main-information {
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.form__main-program {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .form__input-wrapper {
   padding: 0;
   border: 0;
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-of-type) {
+      margin-right: 76px;
+    }
+  }
 }
 
 .form__main-item {
@@ -49,6 +101,16 @@
   text-transform: uppercase;
   color: $grey-color;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 .form__input {
@@ -64,10 +126,37 @@
   padding: 0 20px;
   height: 45px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 150%;
+    height: 52px;
+  }
 }
 
 .form__contact {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-bottom: 67px;
+  }
+}
+
+.form__contact-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .form__contact-title {
@@ -79,10 +168,30 @@
   color: $black-color;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
 }
 
 .form__comment {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__input-comment {

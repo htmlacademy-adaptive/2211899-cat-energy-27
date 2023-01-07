@@ -57,6 +57,20 @@
   }
 }
 
+.map__address-item {
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
 .map__address-wrapper {
   @media (min-width: $tablet-width) {
     &:not(:last-of-type) {
