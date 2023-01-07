@@ -22,7 +22,7 @@
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Каталог продукции</a>
+          <a class="site-list__link site-list__link--active">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -180,35 +180,43 @@
           <h2 class="additional__title">Дополнительные товары</h2>
           <ul class="additional__list product-list">
             <li class="product-list__item">
-              <h3 class="product-list__title">Сахарозаменитель</h3>
-              <dl class="product-list__wrapper">
-                <dt class="product-list__specifications">1 упаковка (100 г)</dt>
-                <dd class="product-list__specifications">200 ₽</dd>
-              </dl>
+              <div class="product-list__item-wrapper">
+                <h3 class="product-list__title">Сахарозаменитель</h3>
+                <dl class="product-list__wrapper">
+                  <dt class="product-list__specifications">1 упаковка (100 г)</dt>
+                  <dd class="product-list__options">200 ₽</dd>
+                </dl>
+              </div>
               <button class="product-list__button button" type="button">Заказать</button>
             </li>
             <li class="product-list__item">
-              <h3 class="product-list__title">Питьевая вода</h3>
-              <dl class="product-list__wrapper">
-                <dt class="product-list__specifications">5 литров</dd>
-                <dd class="product-list__specifications">50 ₽</dd>
-              </dl>
+              <div class="product-list__item-wrapper">
+                <h3 class="product-list__title">Питьевая вода</h3>
+                <dl class="product-list__wrapper">
+                  <dt class="product-list__specifications">5 литров</dd>
+                  <dd class="product-list__options">50 ₽</dd>
+                </dl>
+              </div>
               <button class="product-list__button button" type="button">Заказать</button>
             </li>
             <li class="product-list__item">
-              <h3 class="product-list__title">Молоко</h3>
-              <dl class="product-list__wrapper">
-                <dt class="product-list__specifications">1 литров</dt>
-                <dd class="product-list__specifications">100 ₽</dd>
-              </dl>
+              <div class="product-list__item-wrapper">
+                <h3 class="product-list__title">Молоко</h3>
+                <dl class="product-list__wrapper">
+                  <dt class="product-list__specifications">1 литров</dt>
+                  <dd class="product-list__options">100 ₽</dd>
+                </dl>
+              </div>
               <button class="product-list__button button" type="button">Заказать</button>
             </li>
             <li class="product-list__item">
-              <h3 class="product-list__title">Витамины</h3>
-              <dl class="product-list__wrapper">
-                <dt class="product-list__specifications">1 упаковка (100 г)</dt>
-                <dd class="product-list__specifications">300 ₽</dd>
-              </dl>
+              <div class="product-list__item-wrapper">
+                <h3 class="product-list__title">Витамины</h3>
+                <dl class="product-list__wrapper">
+                  <dt class="product-list__specifications">1 упаковка (100 г)</dt>
+                  <dd class="product-list__options">300 ₽</dd>
+                </dl>
+              </div>
               <button class="product-list__button button" type="button">Заказать</button>
             </li>
           </ul>
@@ -220,8 +228,11 @@
       </section>
       <section class="map">
         <div class="map__wrapper wrapper--gray">
-          <h3 class="map__heading">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="map__address">ул. Большая<br>Конюшенная, д.<br>19/8 Санкт-Петербург</p>
+          <h3 class="map__heading">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+          <p class="map__address">
+            <span class="map__address-wrapper">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="map__address-wrapper">Санкт-Петербург</span>
+          </p>
         </div>
       </section>
     </main>

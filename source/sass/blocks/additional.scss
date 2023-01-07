@@ -2,6 +2,15 @@
 
 .additional {
   padding: 0 20px 54px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 76px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 110px 76px 110px;
+  }
 }
 
 .additional__title {
@@ -12,4 +21,14 @@
   line-height: 150%;
   margin: 0;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 100%;
+  }
 }
