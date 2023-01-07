@@ -10,8 +10,8 @@
 }
 
 .catalog__program {
-  min-height: 270px;
-  padding: 21px 33px 18px 20px;
+  min-height: 250px;
+  padding: 21px 33px 0 20px;
   background: $basic-gray-color;
 
   &:not(:last-of-type) {
@@ -80,6 +80,14 @@
 }
 
 .catalog__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black-color;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
@@ -93,13 +101,3 @@
   }
 }
 
-.catalog__link-name {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  text-align: center;
-  text-transform: uppercase;
-  color: $black-color;
-}

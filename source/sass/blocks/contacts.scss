@@ -1,8 +1,8 @@
 @use "./variables.scss" as *;
 
-.map__wrapper {
+.contacts__wrapper {
   display: flex;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
@@ -15,12 +15,12 @@
   }
 }
 
-.map__heading {
+.contacts__offer {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 143%;
+  line-height: 150%;
   text-transform: uppercase;
   color: $black-color;
   margin: 0;
@@ -32,14 +32,14 @@
   }
 }
 
-.map__address {
+.contacts__address {
   display: flex;
   flex-direction: column;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 125%;
+  font-size: 14px;
+  line-height: 143%;
   margin: 0;
   width: 50%;
   color: $grey-color;
@@ -57,7 +57,7 @@
   }
 }
 
-.map__address-item {
+.contacts__address-item {
   @media (min-width: $tablet-width) {
     &:not(:last-of-type) {
       margin-bottom: 16px;
@@ -71,7 +71,7 @@
   }
 }
 
-.map__address-wrapper {
+.contacts__address-wrapper {
   @media (min-width: $tablet-width) {
     &:not(:last-of-type) {
       margin-bottom: 19px;

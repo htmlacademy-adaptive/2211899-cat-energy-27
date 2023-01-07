@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body class="page__body">
-    <h1 class="visually-hidden">Кэт энерджи</h1>
      <!--Шапка-->
      <header class="main-header">
       <a class="main-header__logo">
@@ -33,34 +32,33 @@
       </ul>
   </nav>
   </header>
+
+
     <main class="main-container">
+
       <section class="request">
         <form class="request__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="form__title">Подбор программы</h2>
+          <h1 class="form__title">Подбор программы</h1>
           <p class="form__paragraph">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
           <div class="form__main-wrapper">
-            <div class="form__main-information">
-              <fieldset class="form__input-wrapper">
-                <p class="form__main-item">
+
+            <fieldset class="form__main-information">
+              <ul class="form__list">
+                <li class="form__list-item">
                   <label class="form__label" for="name-selection">Имя:</label>
                   <input class="form__input" type="text" id="name-selection" name="name-selection" placeholder="Введите имя">
-                </p>
-              </fieldset>
-              <fieldset class="form__input-wrapper">
-                <p class="form__main-item">
+                </li>
+                <li class="form__list-item">
                   <label class="form__label" for="weight-selection">Вес(Кг):*</label>
                   <input class="form__input" type="text" id="weight-selection" name="weight-selection" placeholder="Введите вес">
-                </p>
-              </fieldset>
-              <fieldset class="form__input-wrapper">
-                <p class="form__main-item">
+                </li>
+                <li class="form__list-item">
                   <label class="form__label" for="age-selection">Возраст (лет):</label>
                   <input class="form__input" type="text" id="age-selection" name="age-selection" placeholder="Введите возраст">
-                </p>
-              </fieldset>
-            </div>
-            <div class="form__program">
+                </li>
+              </ul>
+            <fieldset class="form__program">
               <ul class="form__list-program program-list">
                 <li class="program-list__item">
                   <label class="program-list__label">
@@ -81,8 +79,9 @@
                   </label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
           </div>
+
           <div class="form__contact">
             <h3 class="form__contact-title">Контактные данные (владельца кота)</h3>
             <div class="form__contact-wrapper">
@@ -103,13 +102,11 @@
           <div class="form__comment">
             <h3 class="form__contact-title">Комментарий</h3>
             <fieldset class="form__input-wrapper">
-              <p class="form__main-item">
                 <label class="visually-hidden" for="comment-selection">Ваш Комментарий</label>
-                <input class="form__input-comment" type="text" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота">
-              </p>
+                <textarea class="form__input-comment" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота">
             </fieldset>
           </div>
-          <div class="form__additionally">
+          <fieldset class="form__additionally">
             <h3 class="form__contact-title">Дополнительно</h3>
             <ul class="form__radio-additionally additionally-list">
               <li class="additionally-list__item">
@@ -137,7 +134,7 @@
                 </label>
               </li>
             </ul>
-          </div>
+          </fieldset>
           <div class="request__button-wrapper">
             <button class="request__button button" type="submit">Отправить заявку</button>
             <p class="request__info">* — Обязательные поля</p>
@@ -154,6 +151,7 @@
         </div>
       </section>
     </main>
+
      <!--Подвал-->
      <footer class="main-footer">
       <a class="main-footer__logo" href="">

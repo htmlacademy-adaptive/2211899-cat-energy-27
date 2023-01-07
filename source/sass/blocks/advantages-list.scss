@@ -23,6 +23,14 @@
   align-items: left;
   width: 100%;
   max-width: 280px;
+  margin: 0;
+  color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    font-size: 16px;
+    line-height: 150%;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -55,16 +63,5 @@
     min-height: 80px;
     margin: 0;
     margin-bottom: 31px;
-  }
-}
-
-.advantages-list__paragraph {
-  margin: 0;
-  color: $grey-color;
-
-  @media (min-width: $tablet-width) {
-    max-width: 230px;
-    font-size: 16px;
-    line-height: 150%;
   }
 }
