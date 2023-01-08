@@ -9,7 +9,7 @@
 }
 
 .catalog-container__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -48,7 +48,7 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -57,7 +57,7 @@
 }
 
 .catalog__specification {
-  font-family: "Lato", sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

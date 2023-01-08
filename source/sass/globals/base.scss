@@ -1,0 +1,20 @@
+@use "./blocks/variables.scss" as *;
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+}

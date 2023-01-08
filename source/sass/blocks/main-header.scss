@@ -24,17 +24,11 @@
   align-items: center;
 }
 
-@media (min-width: $phone-width) {
-  .main-header__logo-image {
-    &:last-of-type {
-      margin-left: 57px;
-    }
-  }
-}
-
 .main-header__logo-image {
-  @media (min-width: $tablet-width) {
-    &:last-of-type {
+  &:last-of-type {
+    margin-left: 57px;
+
+    @media (min-width: $tablet-width) {
       margin-left: 12px;
     }
   }

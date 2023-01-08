@@ -2,7 +2,7 @@
 
 .contacts__wrapper {
   display: flex;
-  padding: 26px 0;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
@@ -10,13 +10,11 @@
 
   @media (min-width: $desktop-width) {
     padding: 56px 80px;
-    max-width: 425px;
-    max-height: 86px;
   }
 }
 
 .contacts__offer {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,12 +28,19 @@
     font-size: 20px;
     line-height: 130%;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 130%;
+    width: 163px;
+    margin-right: 87px;
+  }
 }
 
 .contacts__address {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

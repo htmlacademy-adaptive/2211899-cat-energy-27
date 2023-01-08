@@ -1,4 +1,5 @@
-@use "./blocks/fonts.scss";
+@use "./globals/fonts.scss";
+@use "./globals/base.scss";
 @use "./blocks/button.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/main-header.scss";
@@ -14,7 +15,7 @@
 @use "./blocks/request.scss";
 @use "./blocks/catalog-container.scss";
 @use "./blocks/additional.scss";
-@use "./blocks/global.scss";
+@use "./globals/global.scss";
 @use "./blocks/more.scss";
 @use "./blocks/product-list.scss";
 @use "./blocks/form.scss";

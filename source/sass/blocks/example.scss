@@ -1,10 +1,8 @@
 @use "./variables.scss" as *;
 
 .example {
-  @media (min-width: $phone-width) {
-    background-color: $basic-gray-color;
-    padding: 25px 20px 40px 20px;
-  }
+  background-color: $basic-gray-color;
+  padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -30,7 +28,7 @@
 }
 
 .example__name {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -101,7 +99,7 @@
 }
 
 .example__number {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -133,7 +131,7 @@
 .example__expenses {
   margin: 0 auto 20px auto;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

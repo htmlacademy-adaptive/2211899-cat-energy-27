@@ -1,7 +1,7 @@
 @use "./variables.scss" as *;
 
 .form__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -27,7 +27,7 @@
 }
 
 .form__paragraph {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -57,7 +57,11 @@
 }
 
 .form__main-information {
-  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -68,9 +72,39 @@
   }
 }
 
-.form__main-program {
+.form__program {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     width: 50%;
+  }
+}
+
+.form__additionally {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
+
+.form__list-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 14px;
   }
 }
 
@@ -93,7 +127,7 @@
 }
 
 .form__label {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -114,7 +148,7 @@
 }
 
 .form__input {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -160,7 +194,7 @@
 }
 
 .form__contact-title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -195,15 +229,25 @@
 }
 
 .form__input-comment {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
   color: $black-color;
-  max-width: 270px;
+  width: 270px;
   min-height: 150px;
   padding: 10px 12px 0 15px;
   border: 1px solid #e8e8e8;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 174px;
+  }
 }

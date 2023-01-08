@@ -39,7 +39,7 @@
       <section class="request">
         <form class="request__form form" action="https://echo.htmlacademy.ru/" method="post">
           <h1 class="form__title">Подбор программы</h1>
-          <p class="form__paragraph">Заполните анкету, и мы подберем
+          <p class="form__paragraph">Заполните анкету, и мы подберем<br>
             программу питания для вашего кота</p>
           <div class="form__main-wrapper">
 
@@ -61,22 +61,16 @@
             <fieldset class="form__program">
               <ul class="form__list-program program-list">
                 <li class="program-list__item">
-                  <label class="program-list__label">
-                    <input class="program-list__input" type="radio" name="program-group" value="weight-loss" checked>
-                    Похудение
-                  </label>
+                  <input class="program-list__input" type="radio" name="program-group" value="weight-loss" checked>
+                  <label class="program-list__label">Похудение</label>
                 </li>
                 <li class="program-list__item">
-                  <label class="program-list__label">
-                    <input class="program-list__input" type="radio" name="program-group" value="weight-gain">
-                    Набор массы
-                  </label>
+                  <input class="program-list__input" type="radio" name="program-group" value="weight-gain">
+                  <label class="program-list__label">Набор массы</label>
                 </li>
                 <li class="program-list__item">
-                  <label class="program-list__label">
-                    <input class="program-list__input" type="radio" name="program-group" value="dont-know">
-                    Не знаю (Нужен ваш совет)
-                  </label>
+                  <input class="program-list__input" type="radio" name="program-group" value="dont-know">
+                  <label class="program-list__label">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
@@ -103,35 +97,27 @@
             <h3 class="form__contact-title">Комментарий</h3>
             <fieldset class="form__input-wrapper">
                 <label class="visually-hidden" for="comment-selection">Ваш Комментарий</label>
-                <textarea class="form__input-comment" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота">
+                <textarea class="form__input-comment" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </fieldset>
           </div>
           <fieldset class="form__additionally">
             <h3 class="form__contact-title">Дополнительно</h3>
             <ul class="form__radio-additionally additionally-list">
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="sweetener" checked>
-                  Сахарозаменитель
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="sweetener" checked>
+                <label class="additionally-list__label">Сахарозаменитель</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="drinking-water">
-                  Питьевая вода
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="drinking-water">
+                <label class="additionally-list__label">Питьевая вода</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="milk">
-                  Молоко
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="milk">
+                <label class="additionally-list__label">Молоко</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="vitamins">
-                  Витамины
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="vitamins">
+                <label class="additionally-list__label">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -141,14 +127,19 @@
           </div>
         </form>
       </section>
-      <section class="map">
-        <div class="map__wrapper wrapper--gray">
-          <h3 class="map__heading">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-          <p class="map__address">
-            <span class="map__address-item">ул. Большая<br>Конюшенная, д. 19/8</span>
-            <span class="map__address-item">Санкт-Петербург</span>
-          </p>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__offer">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <address class="contacts__address">
+            <span class="contacts__address-wrapper">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="contacts__address-wrapper">Санкт-Петербург</span>
+          </address>
         </div>
+      </section>
+
+       <!--Карта-->
+      <section class="map">
+        <img src="#" alt="Карта.">
       </section>
     </main>
 

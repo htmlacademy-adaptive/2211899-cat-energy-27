@@ -35,13 +35,13 @@
 
 .request__info {
   display: flex;
-  font-family: "Lato", sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 114%;
   color: $black-color;
   text-align: center;
-  align-items: center;
   margin: 0;
+  align-items: center;
 }
