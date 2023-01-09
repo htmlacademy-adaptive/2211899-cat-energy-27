@@ -8,79 +8,78 @@
     <base href="https://htmlacademy-adaptive.github.io/2211899-cat-energy-27/4/">
 </head>
   <body class="page__body">
-    <h1 class="visually-hidden">Кэт энерджи</h1>
-    <header class="main-header">
+     <!--Шапка-->
+     <header class="main-header">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="./img/main-header/logo-cat.svg" width="34" height="38" alt="Логотип «Кэт энерджи».">
         <img class="main-header__logo-image" src="./img/main-header/logo-name.svg" width="101" height="18" alt="Магазин «Кэт энерджи».">
       </a>
+
+    <!--Навигация-->
     <nav class="main-nav">
       <button class="main-nav__button" type="button">
-        <span class="visually-hidden"></span>
+        <span class="visually-hidden">Меню</span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Подбор программы</a>
+          <a class="site-list__link  site-list__link--active" href="form.html">Подбор программы</a>
         </li>
       </ul>
   </nav>
   </header>
+
+
     <main class="main-container">
+
       <section class="request">
         <form class="request__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="form__title">Подбор программы</h2>
-          <p class="form__paragraph">Заполните анкету, и мы подберем
+          <h1 class="form__title">Подбор программы</h1>
+          <p class="form__paragraph">Заполните анкету, и мы подберем<br>
             программу питания для вашего кота</p>
-          <div class="form__main-information">
-            <fieldset class="form__input-wrapper">
-              <p class="form__main-item">
-                <label class="form__label" for="name-selection">Имя:</label>
-                <input class="form__input" type="text" id="name-selection" name="name-selection" placeholder="Введите имя">
-              </p>
-            </fieldset>
-            <fieldset class="form__input-wrapper">
-              <p class="form__main-item">
-                <label class="form__label" for="weight-selection">Вес(Кг):*</label>
-                <input class="form__input" type="text" id="weight-selection" name="weight-selection" placeholder="Введите вес">
-              </p>
-            </fieldset>
-            <fieldset class="form__input-wrapper">
-              <p class="form__main-item">
-                <label class="form__label" for="age-selection">Возраст (лет):</label>
-                <input class="form__input" type="text" id="age-selection" name="age-selection" placeholder="Введите возраст">
-              </p>
-            </fieldset>
-          </div>
-          <div class="form__program">
-            <ul class="form__list-program program-list">
-              <li class="program-list__item">
-                <label class="program-list__label">
+          <div class="form__main-wrapper">
+
+            <fieldset class="form__main-information">
+              <ul class="form__list">
+                <li class="form__list-item">
+                  <label class="form__label" for="name-selection">Имя:</label>
+                  <input class="form__input" type="text" id="name-selection" name="name-selection" placeholder="Введите имя">
+                </li>
+                <li class="form__list-item">
+                  <label class="form__label" for="weight-selection">Вес(Кг):*</label>
+                  <input class="form__input" type="text" id="weight-selection" name="weight-selection" placeholder="Введите вес">
+                </li>
+                <li class="form__list-item">
+                  <label class="form__label" for="age-selection">Возраст (лет):</label>
+                  <input class="form__input" type="text" id="age-selection" name="age-selection" placeholder="Введите возраст">
+                </li>
+              </ul>
+            <fieldset class="form__program">
+              <ul class="form__list-program program-list">
+                <li class="program-list__item">
                   <input class="program-list__input" type="radio" name="program-group" value="weight-loss" checked>
-                  Похудение
-                </label>
-              </li>
-              <li class="program-list__item">
-                <label class="program-list__label">
+                  <label class="program-list__label">Похудение</label>
+                </li>
+                <li class="program-list__item">
                   <input class="program-list__input" type="radio" name="program-group" value="weight-gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="program-list__item">
-                <label class="program-list__label">
+                  <label class="program-list__label">Набор массы</label>
+                </li>
+                <li class="program-list__item">
                   <input class="program-list__input" type="radio" name="program-group" value="dont-know">
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
+                  <label class="program-list__label">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
+
           <div class="form__contact">
-            <h3 class="form__contact-title">Контактные данные<br>(владельца кота)</h3>
+            <h3 class="form__contact-title">Контактные данные (владельца кота)</h3>
+            <div class="form__contact-wrapper">
               <fieldset class="form__input-wrapper">
                 <p class="form__main-item">
                   <label class="form__label" for="email-selection">E-mail:*</label>
@@ -93,57 +92,60 @@
                   <input class="form__input" type="tel" id="phone-selection" name="phone-selection" placeholder="Введите телефон">
                 </p>
               </fieldset>
+            </div>
           </div>
           <div class="form__comment">
             <h3 class="form__contact-title">Комментарий</h3>
             <fieldset class="form__input-wrapper">
-              <p class="form__main-item">
                 <label class="visually-hidden" for="comment-selection">Ваш Комментарий</label>
-                <input class="form__input-comment" type="text" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота">
-              </p>
+                <textarea class="form__input-comment" id="comment-selection" name="comment-selection" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </fieldset>
           </div>
-          <div class="form__additionally">
+          <fieldset class="form__additionally">
             <h3 class="form__contact-title">Дополнительно</h3>
             <ul class="form__radio-additionally additionally-list">
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="sweetener" checked>
-                  Сахарозаменитель
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="sweetener" checked>
+                <label class="additionally-list__label">Сахарозаменитель</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="drinking-water">
-                  Питьевая вода
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="drinking-water">
+                <label class="additionally-list__label">Питьевая вода</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="milk">
-                  Молоко
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="milk">
+                <label class="additionally-list__label">Молоко</label>
               </li>
               <li class="additionally-list__item">
-                <label class="additionally-list__label">
-                  <input class="additionally-list__input" type="radio" name="additionally-group" value="vitamins">
-                  Витамины
-                </label>
+                <input class="additionally-list__input" type="radio" name="additionally-group" value="vitamins">
+                <label class="additionally-list__label">Витамины</label>
               </li>
             </ul>
+          </fieldset>
+          <div class="request__button-wrapper">
+            <button class="request__button button" type="submit">Отправить заявку</button>
+            <p class="request__info">* — Обязательные поля</p>
           </div>
-          <button class="request__button button" type="submit">Отправить заявку</button>
-          <p class="request__info">* — Обязательные поля</p>
         </form>
       </section>
-      <section class="map">
-        <div class="map__wrapper wrapper--gray">
-          <h3 class="map__heading">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="map__address">ул. Большая<br>Конюшенная, д.<br>19/8 Санкт-Петербург</p>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__offer">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <address class="contacts__address">
+            <span class="contacts__address-wrapper">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="contacts__address-wrapper">Санкт-Петербург</span>
+          </address>
         </div>
       </section>
+
+       <!--Карта-->
+      <section class="map">
+        <img src="#" alt="Карта.">
+      </section>
     </main>
-    <footer class="main-footer">
+
+     <!--Подвал-->
+     <footer class="main-footer">
       <a class="main-footer__logo" href="">
         <img src="./img/main-footer/footer-logo.svg" width="128" height="24" alt="Логотип CAT Energy.">
       </a>
