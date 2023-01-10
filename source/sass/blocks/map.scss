@@ -1,29 +1,26 @@
 @use "./variables.scss" as *;
 
-.map__wrapper {
-  display: flex;
-  padding: 26px 20px;
+.map {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+  }
 }
 
-.map__heading {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 143%;
-  text-transform: uppercase;
-  color: $black-color;
-  margin: 0;
-  width: 50%;
-}
+.map__location {
+  border: none;
+  display: block;
+  width: 320px;
+  height: 362px;
 
-.map__address {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 125%;
-  color: $black-color;
-  margin: 0;
-  width: 50%;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    width: 1440px;
+    height: 400px;
+  }
 }

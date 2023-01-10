@@ -1,10 +1,17 @@
 @use "./variables.scss" as *;
 
 .copyright__text {
-  font-family: "Lato", sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+    color: $grey-color;
+    margin-right: 23px;
+  }
 }

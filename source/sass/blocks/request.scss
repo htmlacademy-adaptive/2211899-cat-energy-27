@@ -3,14 +3,43 @@
 .request {
   padding: 0 20px 32px 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 67px 71px 71px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 82px 110px;
+    margin: 0;
+  }
 }
 
 .wrapper--gray {
   background: $basic-gray-color;
+
+  @media (min-width: $desktop-width) {
+    background: $white-color;
+  }
+}
+
+.request__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.request__button {
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+    margin: 0;
+    margin-right: 84px;
+  }
 }
 
 .request__info {
-  font-family: "Lato", sans-serif;
+  display: flex;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -18,4 +47,5 @@
   color: $black-color;
   text-align: center;
   margin: 0;
+  align-items: center;
 }
