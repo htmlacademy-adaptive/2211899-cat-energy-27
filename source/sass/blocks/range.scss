@@ -3,12 +3,16 @@
 .range {
   @media (min-width: $tablet-width) {
     min-height: 462px;
-    background: $basic-gray-color;
+    background-image: linear-gradient($white-color 30%, $basic-gray-color 30%);
   }
 
   @media (min-width: $desktop-width) {
     min-height: 512px;
     min-width: 560px;
-    background: $basic-gray-color;
+    background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
   }
+}
+
+.range__image-wrapper {
+  display: flex;
 }

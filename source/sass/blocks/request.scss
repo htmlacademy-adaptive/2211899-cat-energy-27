@@ -17,6 +17,10 @@
 
 .wrapper--gray {
   background: $basic-gray-color;
+
+  @media (min-width: $desktop-width) {
+    background: $white-color;
+  }
 }
 
 .request__button-wrapper {

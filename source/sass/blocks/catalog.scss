@@ -1,11 +1,40 @@
 @use "./variables.scss" as *;
 
-.main-container__catalog {
-  padding: 20px;
+.catalog-container {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 68px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    padding: 0 110px;
+    padding: 0 110px 75px;
+  }
+}
+
+.catalog-container__title {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 50px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 84px;
   }
 }
 
@@ -101,3 +130,175 @@
   }
 }
 
+.catalog {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 62px 80px;
+  }
+}
+
+
+.catalog__item {
+  padding: 11px 0 14px;
+  margin-bottom: 19px;
+
+  &--more {
+    background-image: url("../../img/catalog/plus.svg");
+    background-color: $white-color;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    background-image: linear-gradient($white-color 16%, $basic-gray-color 16%);
+    padding: 8px 36px 39px;
+
+    &--more {
+      background-image: url("../../img/catalog/plus.svg");
+      background-color: $white-color;
+      background-repeat: no-repeat;
+      background-position: center 50px;
+      background-size: 60px;
+      margin-top: 80px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    background-image: linear-gradient($white-color 16%, $basic-gray-color 16%);
+    padding: 8px 30px 40px;
+
+    &--more {
+      background-image: url("../../img/catalog/plus.svg");
+      background-color: $white-color;
+      background-repeat: no-repeat;
+      background-position: center 50px;
+      background-size: 60px;
+      margin-top: 80px;
+    }
+  }
+}
+
+.catalog__item-wrapper {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.catalog__title {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 143%;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 21px;
+  max-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 140px;
+  }
+}
+
+.catalog__specification-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin-bottom: 14px;
+  }
+}
+
+.catalog__specification {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 114%;
+  color: $grey-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.catalog__item-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.catalog__item-content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.catalog__item-image {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-bottom: 34px;
+  }
+}
+
+.catalog__button {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

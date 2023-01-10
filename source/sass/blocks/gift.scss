@@ -3,9 +3,8 @@
 .gift {
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   min-height: 290px;
-  margin-top: 90px;
 
   &::before {
     position: absolute;
@@ -25,30 +24,27 @@
 
     @media (min-width: $desktop-width) {
       height: 288px;
+      margin-top: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    padding-top: 0;
     min-height: 200px;
+    justify-content: end;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     min-height: 288px;
     width: 245px;
-  }
-}
-
-.gift img {
-  margin: 58px auto 48px auto;
-
-  @media (min-width: $tablet-width) {
-    margin: 57px 265px 60px 77px;
+    justify-content: end;
+    padding-bottom: 42px;
   }
 }
 
 .gift__discription {
+  position: relative;
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
@@ -57,17 +53,46 @@
   color: $white-color;
   text-align: center;
   margin: 0;
+  padding-top: 186px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
     text-align: left;
+    padding-top: 71px;
+    padding-right: 124px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/catalog/icon_gift.svg");
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 78px;
+    top: 58px;
+    left: 40px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      height: 82px;
+      width: 80px;
+      top: 60px;
+      left: -361px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 82px;
+      width: 80px;
+      left: 80px;
+      top: -140px;
+    }
   }
 }

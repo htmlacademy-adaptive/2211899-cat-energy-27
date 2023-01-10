@@ -4,6 +4,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .product-list__item {
@@ -17,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    align-items: center;
     margin-bottom: 0;
     padding: 15px 0;
     border: 0;
@@ -40,6 +49,8 @@
   line-height: 133%;
   text-transform: uppercase;
   color: $black-color;
+  margin: 0;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -50,6 +61,8 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 100%;
+    margin: 0;
+    min-width: 163px;
     margin-right: 164px;
   }
 }
@@ -57,6 +70,19 @@
 .product-list__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    min-width: 285px;
+    margin-right: 40px;
+  }
 }
 
 .product-list__specifications {

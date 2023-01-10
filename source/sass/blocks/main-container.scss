@@ -1,1 +1,10 @@
 @use "./variables.scss" as *;
+
+.main-container__catalog {
+  padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 110px;
+  }
+}

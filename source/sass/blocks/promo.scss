@@ -23,10 +23,12 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    padding: 0;
   }
 
   &::before {
@@ -76,15 +78,14 @@
     height: 609px;
     z-index: -1;
     top: 490px;
-    left: 100px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 552px;
     height: 499px;
-    left: 630px;
-    top: 250px;
+    left: 558px;
+    top: 280px;
   }
 }
 
@@ -140,6 +141,8 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
     margin: 0;
     margin-left: 90px;
     order: 3;

@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 0;
-    background: $basic-gray-color;
+    background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
   }
 }
 
