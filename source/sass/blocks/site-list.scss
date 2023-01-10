@@ -58,6 +58,13 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white-color;
+    color: $white-color;
+  }
+}
+
+.site-list__link--white-color {
+  @media (min-width: $desktop-width) {
+    color: $white-color;
   }
 }
 

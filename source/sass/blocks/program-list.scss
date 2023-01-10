@@ -22,6 +22,7 @@
 }
 
 .program-list__item {
+  position: relative;
   margin-bottom: 14px;
 }
 
@@ -47,5 +48,29 @@
 
 .program-list__input {
   margin: 0;
-  margin-right: 15px;
+  margin-right: 20px;
+}
+
+.program-list__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $basic-gray-color;
+  border-radius: 50%;
+}
+
+.program-list__input[type="checkbox"]:checked + .program-list__control-mark::before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  width: 18px;
+  height: 18px;
+  background: $main-color;
+  background-repeat: no-repeat;
+  background-position: center;
 }
