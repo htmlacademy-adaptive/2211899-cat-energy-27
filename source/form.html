@@ -9,9 +9,9 @@
   <body class="page__body">
     <!--Шапка-->
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo logo">
         <img
-          class="main-header__logo-image"
+          class="logo__image"
           src="./img/main-header/logo-cat.svg"
           width="34"
           height="38"
@@ -59,8 +59,8 @@
             Заполните анкету, и мы подберем<br />
             программу питания для вашего кота
           </p>
-          <div class="form__main-wrapper">
-            <fieldset class="form__main-information">
+          <div class="form__section-wrapper form__section-wrapper--main">
+            <fieldset class="form__fieldset form__fieldset--main">
               <ul class="form__list">
                 <li class="form__list-item">
                   <label class="form__label" for="name-selection">Имя:</label>
@@ -98,133 +98,136 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__program">
-              <ul class="form__list-program program-list">
-                <li class="program-list__item">
+            <fieldset class="form__fieldset form__fieldset--program">
+              <ul class="form__list form__list--program">
+                <li class="form__list-item">
                   <input
-                    class="program-list__input"
+                    class="form__radio"
                     type="radio"
                     name="program-group"
                     value="weight-loss"
                     checked
                   />
-                  <label class="program-list__label">Похудение</label>
+                  <label class="form__label form__label--radio"
+                    >Похудение</label
+                  >
                 </li>
                 <li class="program-list__item">
                   <input
-                    class="program-list__input"
+                    class="form__radio"
                     type="radio"
                     name="program-group"
-                    value="weight-gain"
+                    value="weight-loss"
+                    checked
                   />
-                  <label class="program-list__label">Набор массы</label>
+                  <label class="form__label form__label--radio"
+                    >Набор массы</label
+                  >
                 </li>
                 <li class="program-list__item">
                   <input
-                    class="program-list__input"
+                    class="form__radio"
                     type="radio"
                     name="program-group"
-                    value="dont-know"
+                    value="weight-loss"
+                    checked
                   />
-                  <label class="program-list__label"
+                  <label class="form__label form__label--radio"
                     >Не знаю (Нужен ваш совет)</label
                   >
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__contact">
-            <h3 class="form__contact-title">
+          <div class="form__section-wrapper form__section-wrapper--contacts">
+            <h2 class="form__section-title">
               Контактные данные (владельца кота)
-            </h3>
-            <div class="form__contact-wrapper">
-              <fieldset class="form__input-wrapper">
-                <label class="form__label" for="email-selection"
-                  >E-mail:*</label
-                >
-                <input
-                  class="form__input"
-                  type="email"
-                  id="email-selection"
-                  name="email-selection"
-                  placeholder="Введите email"
-                />
-              </fieldset>
-              <fieldset class="form__input-wrapper">
-                <label class="form__label" for="phone-selection"
-                  >Телефон:*</label
-                >
-                <input
-                  class="form__input"
-                  type="tel"
-                  id="phone-selection"
-                  name="phone-selection"
-                  placeholder="Введите телефон"
-                />
-              </fieldset>
-            </div>
-          </div>
-          <div class="form__comment">
-            <h3 class="form__contact-title">Комментарий</h3>
-            <fieldset class="form__input-wrapper">
-              <label class="visually-hidden" for="comment-selection"
-                >Ваш Комментарий</label
-              >
-              <textarea
-                class="form__input-comment"
-                id="comment-selection"
-                name="comment-selection"
-                placeholder="Расскажите обо всех повАдках кота"
-              ></textarea>
+            </h2>
+            <fieldset class="form__fieldset">
+              <ul class="form__list form__list--contacts">
+                <li class="form__list-item">
+                  <label class="form__label" for="email-selection"
+                    >E-mail:*</label
+                  >
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email-selection"
+                    name="email-selection"
+                    placeholder="Введите email"
+                  />
+                </li>
+                <li class="form__list-item">
+                  <label class="form__label" for="phone-selection"
+                    >Телефон:*</label
+                  >
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="phone-selection"
+                    name="phone-selection"
+                    placeholder="Введите телефон"
+                  />
+                </li>
+              </ul>
             </fieldset>
           </div>
-          <fieldset class="form__additionally">
-            <h3 class="form__contact-title">Дополнительно</h3>
-            <ul class="form__radio-additionally additionally-list">
-              <li class="additionally-list__item">
+          <div class="form__section-wrapper form__section-wrapper--comment">
+            <label class="form__section-title" for="owner-comment">
+              Комментарий
+            </label>
+            <textarea
+              class="form__textarea"
+              id="owner-comment"
+              name="owner-comment"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
+          </div>
+          <fieldset class="form__fieldset form__fieldset--aditionally">
+            <h2 class="form__section-title">Дополнительно</h2>
+            <ul class="form__list form__list--aditionally">
+              <li class="form__list-item">
                 <input
-                  class="additionally-list__input"
-                  type="radio"
+                  class="form__checkbox"
+                  type="checkbox"
                   name="additionally-group"
                   value="sweetener"
                   checked
                 />
-                <label class="additionally-list__label">Сахарозаменитель</label>
+                <label class="form__label">Сахарозаменитель</label>
               </li>
-              <li class="additionally-list__item">
+              <li class="form__list-item">
                 <input
-                  class="additionally-list__input"
-                  type="radio"
+                  class="form__checkbox"
+                  type="checkbox"
                   name="additionally-group"
                   value="drinking-water"
                 />
-                <label class="additionally-list__label">Питьевая вода</label>
+                <label class="form__label">Питьевая вода</label>
               </li>
-              <li class="additionally-list__item">
+              <li class="form__list-item">
                 <input
-                  class="additionally-list__input"
-                  type="radio"
+                  class="form__checkbox"
+                  type="checkbox"
                   name="additionally-group"
                   value="milk"
                 />
-                <label class="additionally-list__label">Молоко</label>
+                <label class="form__label">Молоко</label>
               </li>
-              <li class="additionally-list__item">
+              <li class="form__list-item">
                 <input
-                  class="additionally-list__input"
-                  type="radio"
+                  class="form__checkbox"
+                  type="checkbox"
                   name="additionally-group"
                   value="vitamins"
                 />
-                <label class="additionally-list__label">Витамины</label>
+                <label class="form__label">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <div class="request__button-wrapper">
-            <button class="request__button button" type="submit">
-              Отправить заявку
-            </button>
-            <p class="request__info">* — Обязательные поля</p>
+          <div class="form__section-wrapper form__section-wrapper--submit">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__required">* — Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -258,34 +261,22 @@
 
     <!--Подвал-->
     <footer class="main-footer">
-      <a class="main-footer__logo" href="">
-        <img
-          src="./img/main-footer/footer-logo.svg"
-          width="128"
-          height="24"
-          alt="Логотип CAT Energy."
-        />
+      <a class="main-footer__logo logo" href="">
+        <img class="logo__img" src="./img/main-footer/footer-logo.svg" width="128" height="24" alt="Логотип CAT Energy." />
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a
-              class="social__link social__link-vkontakte"
-              href="https://vk.com/htmlacademy"
-            >
-              <img
-                src="./img/main-footer/vk.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть VK."
-              />
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <!-- Нужно добавить скрытый заголовок для повышения доступности.
+                Аналогично следует добавить ниже (самостоятельно) -->
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+              <img src="./img/main-footer/vk.svg" width="28" height="22" alt="Социальная сеть VK." />
             </a>
           </li>
           <li class="social__item">
-            <a
-              class="social__link social__link-youtube"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Ютуб.</span>
               <img
                 src="./img/main-footer/youtube.svg"
                 width="28"
@@ -295,10 +286,8 @@
             </a>
           </li>
           <li class="social__item">
-            <a
-              class="social__link social__link-telegram"
-              href="https://t.me/htmlacademy"
-            >
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграм.</span>
               <img
                 src="./img/main-footer/telegram.svg"
                 width="28"
@@ -310,7 +299,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">HTML Academy</b>
+        <p class="copyright__text">HTML Academy</p>
         <img
           src="./img/main-footer/html-academy.svg"
           width="27"

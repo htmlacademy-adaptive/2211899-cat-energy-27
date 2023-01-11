@@ -1,0 +1,16 @@
+@use "./variables.scss" as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  &:last-of-type {
+    margin-left: 57px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 12px;
+    }
+  }
+}
