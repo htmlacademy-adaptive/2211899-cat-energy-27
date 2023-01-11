@@ -56,11 +56,26 @@
   &--main {
     @media (min-width: $desktop-width) {
       display: flex;
+      margin-bottom: 49px;
     }
   }
 
   &--comment {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--submit {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
 
@@ -73,12 +88,24 @@
     display: flex;
     gap: 80px;
 
+    @media (min-width: $desktop-width) {
+      width: 569px;
+    }
+  }
+
+  &--program {
     @media (min-width: $tablet-width) {
-      margin-bottom: 72px;
+      padding: 25px 27px 11px;
+      border: 1px solid $basic-gray-color;
+      margin-bottom: 58px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 50%;
+      padding: 25px 28px 0;
+      border: 1px solid $basic-gray-color;
+      margin-bottom: 0;
+      width: 568px;
+      height: 200px;
     }
   }
 
@@ -146,12 +173,56 @@
     flex-grow: 1;
   }
 
+  &--main {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+      width: 630px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      width: 569px;
+      margin-right: 80px;
+    }
+  }
+
+  &--program {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 568px;
+    }
+  }
+
   &--contacts {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      margin-bottom: 47px;
+    }
   }
 
   &--aditionally {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 61px;
+    }
   }
 }
 
@@ -159,6 +230,28 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  &--contacts {
+    width: 50%;
+    margin-right: 78px;
+  }
+
+  &--aditionally {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 25%;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form__input-wrapper {
@@ -240,11 +333,92 @@
 }
 
 .form__radio {
-  margin-right: 15px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $basic-gray-color;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.form__radio:checked + label {
+  &::before {
+    background-image: url("../../img/form/radiobutton-active.svg");
+  }
 }
 
 .form__checkbox {
-  margin-right: 16px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  &::before {
+    content: " ";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $basic-gray-color;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.form__checkbox:checked + label {
+  &::before {
+    background-image: url("../../img/form/checkbox-active.svg");
+  }
 }
 
 .form__contact-title {
@@ -302,4 +476,18 @@
   color: $black-color;
   margin: 0;
   margin-top: 10px;
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin: 0;
+    margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin: 0;
+    margin-right: 84px;
+  }
 }
