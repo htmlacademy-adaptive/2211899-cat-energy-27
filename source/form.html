@@ -61,9 +61,9 @@
           </p>
           <div class="form__section-wrapper form__section-wrapper--main">
             <fieldset class="form__fieldset form__fieldset--main">
-              <ul class="form__list">
+              <ul class="form__list form__list--main">
                 <li class="form__list-item">
-                  <label class="form__label" for="name-selection">Имя:</label>
+                  <label class="form__label form__label--main" for="name-selection">Имя:*</label>
                   <input
                     class="form__input"
                     type="text"
@@ -73,7 +73,7 @@
                   />
                 </li>
                 <li class="form__list-item">
-                  <label class="form__label" for="weight-selection"
+                  <label class="form__label form__label--main" for="weight-selection"
                     >Вес(Кг):*</label
                   >
                   <input
@@ -85,7 +85,7 @@
                   />
                 </li>
                 <li class="form__list-item">
-                  <label class="form__label" for="age-selection"
+                  <label class="form__label form__label--main" for="age-selection"
                     >Возраст (лет):</label
                   >
                   <input
@@ -112,7 +112,7 @@
                     >Похудение</label
                   >
                 </li>
-                <li class="program-list__item">
+                <li class="form__list-item">
                   <input
                     class="form__radio"
                     type="radio"
@@ -124,7 +124,7 @@
                     >Набор массы</label
                   >
                 </li>
-                <li class="program-list__item">
+                <li class="form__list-item">
                   <input
                     class="form__radio"
                     type="radio"
@@ -146,7 +146,7 @@
             <fieldset class="form__fieldset">
               <ul class="form__list form__list--contacts">
                 <li class="form__list-item">
-                  <label class="form__label" for="email-selection"
+                  <label class="form__label form__label--contacts" for="email-selection"
                     >E-mail:*</label
                   >
                   <input
@@ -158,7 +158,7 @@
                   />
                 </li>
                 <li class="form__list-item">
-                  <label class="form__label" for="phone-selection"
+                  <label class="form__label form__label--contacts" for="phone-selection"
                     >Телефон:*</label
                   >
                   <input
@@ -173,7 +173,7 @@
             </fieldset>
           </div>
           <div class="form__section-wrapper form__section-wrapper--comment">
-            <label class="form__section-title" for="owner-comment">
+            <label class="form__section-title form__section-title--comment" for="owner-comment">
               Комментарий
             </label>
             <textarea
@@ -194,7 +194,7 @@
                   value="sweetener"
                   checked
                 />
-                <label class="form__label">Сахарозаменитель</label>
+                <label class="form__label form__label--aditionally">Сахарозаменитель</label>
               </li>
               <li class="form__list-item">
                 <input
@@ -203,7 +203,7 @@
                   name="additionally-group"
                   value="drinking-water"
                 />
-                <label class="form__label">Питьевая вода</label>
+                <label class="form__label form__label--aditionally">Питьевая вода</label>
               </li>
               <li class="form__list-item">
                 <input
@@ -212,7 +212,7 @@
                   name="additionally-group"
                   value="milk"
                 />
-                <label class="form__label">Молоко</label>
+                <label class="form__label form__label--aditionally">Молоко</label>
               </li>
               <li class="form__list-item">
                 <input
@@ -221,7 +221,7 @@
                   name="additionally-group"
                   value="vitamins"
                 />
-                <label class="form__label">Витамины</label>
+                <label class="form__label form__label--aditionally">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -233,7 +233,7 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контактные данные</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper  wrapper--gray">
           <p class="contacts__offer">
             Приглашаем<br />к сотрудничеству<br />дилеров!
           </p>
