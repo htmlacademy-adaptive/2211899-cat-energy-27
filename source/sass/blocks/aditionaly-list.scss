@@ -4,20 +4,44 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .additionally-list__item {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .additionally-list__label {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 129%;
   color: $black-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 .additionally-list__input {

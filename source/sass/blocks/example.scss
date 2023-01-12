@@ -1,12 +1,34 @@
 @use "./variables.scss" as *;
 
 .example {
-  background: $basic-gray-color;
+  background-color: $basic-gray-color;
   padding: 25px 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: $white-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px 110px;
+    margin-right: 224px;
+  }
 }
 
 .example__name {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -14,21 +36,70 @@
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 146px;
+  }
 }
 
 .example__paragraph {
   margin: 0;
+  margin-bottom: 54px;
   color: $grey-color;
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+  }
+}
+
+.example__item {
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-right: 60px;
+    }
+  }
 }
 
 .example__number {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -36,6 +107,12 @@
   color: $black-color;
   text-align: center;
   margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 123%;
+    margin-bottom: 11px;
+  }
 }
 
 .example__description {
@@ -44,16 +121,59 @@
   color: $grey-color;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 100%;
+  }
 }
 
 .example__expenses {
   margin: 0 auto 20px auto;
-  font-family: "Oswald", sans-serif;
+
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: end;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+.example__expenses-item {
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-bottom: 9px;
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-of-type) {
+      margin-right: 63px;
+      margin-bottom: 0;
+    }
+  }
 }
