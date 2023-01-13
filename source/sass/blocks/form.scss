@@ -236,9 +236,66 @@
     margin-bottom: 20px;
   }
 
-  &--contacts {
-    width: 50%;
-    margin-right: 78px;
+  &--contacts-email {
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      margin-right: 78px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/form/email-stroke.svg");
+      background-repeat: no-repeat;
+      top: 13px;
+      right: 16px;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        top: 16px;
+        right: 18px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 16px;
+        right: 16px;
+      }
+    }
+  }
+
+  &--contacts-phone {
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      margin-right: 78px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/form/phone-stroke.svg");
+      background-repeat: no-repeat;
+      top: 13px;
+      right: 12px;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        top: 16px;
+        right: 18px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 16px;
+        right: 16px;
+      }
+    }
   }
 
   &--aditionally {
