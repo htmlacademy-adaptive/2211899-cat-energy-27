@@ -38,8 +38,8 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="form.html"
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="form.html"
               >Подбор программы</a
             >
           </li>
@@ -104,36 +104,43 @@
                   <input
                     class="form__radio"
                     type="radio"
+                    id="program-group"
                     name="program-group"
                     value="weight-loss"
                     checked
                   />
                   <label class="form__label form__label--radio"
-                    >Похудение</label
+                  for="program-group"
+                  >Похудение</label
                   >
                 </li>
                 <li class="form__list-item">
                   <input
                     class="form__radio"
                     type="radio"
+                    id="program-group"
                     name="program-group"
                     value="weight-loss"
                     checked
                   />
                   <label class="form__label form__label--radio"
-                    >Набор массы</label
+                  for="program-group"
+                  >
+                  Набор массы</label
                   >
                 </li>
                 <li class="form__list-item">
                   <input
                     class="form__radio"
                     type="radio"
+                    id="program-group"
                     name="program-group"
                     value="weight-loss"
                     checked
                   />
                   <label class="form__label form__label--radio"
-                    >Не знаю (Нужен ваш совет)</label
+                  for="program-group"
+                  >Не знаю (Нужен ваш совет)</label
                   >
                 </li>
               </ul>
@@ -145,7 +152,7 @@
             </h2>
             <fieldset class="form__fieldset">
               <ul class="form__list form__list--contacts">
-                <li class="form__list-item form__list-item--contacts">
+                <li class="form__list-item form__list-item--contacts-email">
                   <label class="form__label form__label--contacts" for="email-selection"
                     >E-mail:*</label
                   >
@@ -157,7 +164,7 @@
                     placeholder="Введите email"
                   />
                 </li>
-                <li class="form__list-item form__list-item--contacts">
+                <li class="form__list-item form__list-item--contacts-phone">
                   <label class="form__label form__label--contacts" for="phone-selection"
                     >Телефон:*</label
                   >
@@ -190,38 +197,42 @@
                 <input
                   class="form__checkbox"
                   type="checkbox"
+                  id="additionally-group"
                   name="additionally-group"
                   value="sweetener"
                   checked
                 />
-                <label class="form__label form__label--aditionally">Сахарозаменитель</label>
+                <label class="form__label form__label--aditionally" for="additionally-group">Сахарозаменитель</label>
               </li>
               <li class="form__list-item form__list-item--aditionally">
                 <input
                   class="form__checkbox"
                   type="checkbox"
+                  id="additionally-group"
                   name="additionally-group"
                   value="drinking-water"
                 />
-                <label class="form__label form__label--aditionally">Питьевая вода</label>
+                <label class="form__label form__label--aditionally" for="additionally-group">Питьевая вода</label>
               </li>
               <li class="form__list-item form__list-item--aditionally">
                 <input
                   class="form__checkbox"
                   type="checkbox"
+                  id="additionally-group"
                   name="additionally-group"
                   value="milk"
                 />
-                <label class="form__label form__label--aditionally">Молоко</label>
+                <label class="form__label form__label--aditionally" for="additionally-group">Молоко</label>
               </li>
               <li class="form__list-item form__list-item--aditionally">
                 <input
                   class="form__checkbox"
                   type="checkbox"
+                  id="additionally-group"
                   name="additionally-group"
                   value="vitamins"
                 />
-                <label class="form__label form__label--aditionally">Витамины</label>
+                <label class="form__label form__label--aditionally" for="additionally-group">Витамины</label>
               </li>
             </ul>
           </fieldset>
