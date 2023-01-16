@@ -1,6 +1,8 @@
 @use "./variables.scss" as *;
 
 .copyright__text {
+  display: flex;
+  align-items: center;
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
