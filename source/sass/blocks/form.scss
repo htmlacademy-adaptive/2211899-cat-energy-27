@@ -136,6 +136,8 @@
 }
 
 .form__section-title {
+  position: relative;
+  display: inline-block;
   font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
@@ -143,10 +145,39 @@
   line-height: 108%;
   margin: 0;
   margin-bottom: 35px;
+  padding: 0;
+  padding-right: 14px;
+  max-width: 201px;
+  background-color: $white-color;
+
+  &::after {
+    position: absolute;
+    content: " ";
+    width: 300px;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    background-color: $main-color;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      left: -31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: -70px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 100%;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 600px;
     margin-bottom: 76px;
   }
 
@@ -157,7 +188,7 @@
   }
 
   &--comment {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -371,9 +402,9 @@
   align-items: center;
   text-transform: uppercase;
   color: $grey-color;
-  padding: 0 20px;
+  padding: 0 40px 0 20px;
   height: 45px;
-  border: 1px solid $basic-gray-color;
+  border: 1px solid $special-grey;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -512,7 +543,7 @@
   width: 100%;
   min-height: 150px;
   padding: 10px 12px 0 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     width: 631px;

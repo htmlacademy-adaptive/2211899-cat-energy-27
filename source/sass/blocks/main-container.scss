@@ -1,10 +1,19 @@
 @use "./variables.scss" as *;
 
 .main-container__catalog {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
     padding: 0 110px;
+    gap: 80px;
   }
 }

@@ -21,21 +21,50 @@
 }
 
 .additional__title {
+  position: relative;
+  display: inline-block;
   font-family: $font-secondary;
+  background-color: $white-color;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 37px;
+  padding-right: 21px;
+
+  &::after {
+    position: absolute;
+    content: " ";
+    width: 300px;
+    top: 60%;
+    left: 0;
+    height: 2px;
+    background-color: $main-color;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      left: -31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: -110px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 100%;
+    padding-left: 31px;
+    padding-right: 36px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 100%;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 }

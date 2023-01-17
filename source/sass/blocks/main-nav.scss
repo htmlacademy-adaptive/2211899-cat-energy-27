@@ -34,6 +34,7 @@
   background-color: inherit;
   background-image: url("../img/main-header/menu.svg");
   background-position: center;
+  background-repeat: no-repeat;
 
   &:focus + .main-nav__list {
     display: block;

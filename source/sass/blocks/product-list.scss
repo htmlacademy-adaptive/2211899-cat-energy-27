@@ -1,12 +1,20 @@
 @use "./variables.scss" as *;
 
 .product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
+  border-top: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
+    gap: 0;
+    border-top: 1px solid $special-grey;
+    border-bottom: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,12 +23,19 @@
 }
 
 .product-list__item {
-  margin-bottom: 31px;
+  padding: 12px 0 19px;
+  border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 26px 38px 28px 38px;
-    border: 1px solid $basic-gray-color;
+    border-left: 1px solid $special-grey;
+    border-right: 1px solid $special-grey;
+    border-bottom: 0;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $special-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,9 +43,13 @@
     align-items: center;
     margin-bottom: 0;
     padding: 15px 0;
-    border: 0;
-    border-top: 1px solid $basic-gray-color;
-    border-bottom: 1px solid $basic-gray-color;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $special-grey;
+    }
   }
 }
 
