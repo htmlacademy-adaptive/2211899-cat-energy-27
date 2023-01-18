@@ -27,7 +27,7 @@
       </a>
 
       <!--Навигация-->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
@@ -179,12 +179,10 @@
             </figure>
           </div>
           <div class="range__button-wrapper">
-            <button class="range__button visually-hidden range__button--left">
-              <span class="visually-hidden">Было</span>
+            <button class="range__button">
+              <span class="visually-hidden">Кнопка контроля диапазона</span>
             </button>
-            <button class="range__button visually-hidden range__button--right">
-              <span class="visually-hidden">Стало</span>
-            </button>
+            <div class="range__scale"></div>
           </div>
         </div>
       </section>
@@ -280,5 +278,6 @@
         />
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

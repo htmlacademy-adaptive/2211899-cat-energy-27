@@ -280,7 +280,7 @@
       content: "";
       width: 20px;
       height: 20px;
-      background-image: url("../../img/form/email-stroke.svg");
+      background-image: url("../img/form/email-stroke.svg");
       background-repeat: no-repeat;
       top: 13px;
       right: 16px;
@@ -311,7 +311,7 @@
       content: "";
       width: 20px;
       height: 20px;
-      background-image: url("../../img/form/phone-stroke.svg");
+      background-image: url("../img/form/phone-stroke.svg");
       background-repeat: no-repeat;
       top: 13px;
       right: 12px;
@@ -461,7 +461,7 @@
 
 .form__radio:checked + label {
   &::before {
-    background-image: url("../../img/form/radiobutton-active.svg");
+    background-image: url("../img/form/radiobutton-active.svg");
   }
 }
 
@@ -505,7 +505,7 @@
 
 .form__checkbox:checked + label {
   &::before {
-    background-image: url("../../img/form/checkbox-active.svg");
+    background-image: url("../img/form/checkbox-active.svg");
   }
 }
 
