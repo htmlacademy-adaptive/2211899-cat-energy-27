@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <!--Шапка-->
     <header class="main-header">
       <a class="main-header__logo logo">
-        <img
-          class="logo__image"
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/main-header/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/main-header/logo-tablet.svg">
+          <img
+          class="logo__image logo__image--logo-icon"
           src="./img/main-header/logo-cat.svg"
           width="34"
           height="38"
           alt="Логотип «Кэт энерджи»."
         />
-        <img
-          class="main-header__logo-image"
-          src="./img/main-header/logo-name.svg"
-          width="101"
-          height="18"
-          alt="Магазин «Кэт энерджи»."
-        />
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/main-header/logo-name-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/main-header/logo-name-tablet.svg">
+          <img
+            class="logo__image logo__image--logo-name"
+            src="./img/main-header/logo-name.svg"
+            width="101"
+            height="18"
+            alt="Магазин «Кэт энерджи»."
+          />
+        </picture>
       </a>
 
       <!--Навигация-->
@@ -62,13 +74,17 @@
             <h2 class="promo__title">Функциональное<br />питание для котов</h2>
             <p class="promo__intro">Занялся собой? Займись котом!</p>
           </div>
-          <img
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/main-container/promo/cat_chicken-desktop.png">
+            <source media="(min-width: 768px)" srcset="./img/main-container/promo/cat_chicken-tablet.png">
+            <img
             class="promo__image"
-            src="./img/main-header/cat_chicken.png"
+            src="./img/main-container/promo/cat_chicken.png"
             width="280"
             height="270"
             alt="Cat energy pro."
           />
+          </picture>
           <a class="promo__button button" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -160,22 +176,30 @@
         <div class="example__range range">
           <div class="range__image-wrapper">
             <figure class="range__figure range__figure--before">
-              <img
-                class="range__image"
-                src="./img/main-container/example/cat.png"
-                width="140"
-                height="256"
-                alt="Картинка кота."
-              />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/main-container/example/cat-tablet.png">
+                <source media="(min-width: 768px)" srcset="./img/main-container/example/cat-tablet.png">
+                <img
+                  class="range__image"
+                  src="./img/main-container/example/cat.png"
+                  width="140"
+                  height="256"
+                  alt="Картинка кота."
+                />
+              </picture>
             </figure>
             <figure class="range__figure range__figure--after">
-              <img
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/main-container/example/cat2-tablet.png">
+                <source media="(min-width: 768px)" srcset="./img/main-container/example/cat2-tablet.png">
+                <img
                 class="range__image"
                 src="./img/main-container/example/cat2.png"
                 width="140"
                 height="256"
                 alt="Картинка кота."
               />
+              </picture>
             </figure>
           </div>
           <div class="range__button-wrapper">
