@@ -451,9 +451,18 @@
 
 .catalog__item-image {
   @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
     margin-bottom: 34px;
+
+    &--small {
+      margin-top: 26px;
+      width: 161px;
+      height: 172px;
+    }
+
+    &--big {
+      width: 168px;
+      height: 200px;
+    }
   }
 }
 

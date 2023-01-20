@@ -9,7 +9,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/cat.png");
+    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -18,13 +18,27 @@
     z-index: -1;
     top: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat-tablet.png");
       height: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat-desktop.png");
       height: 288px;
       margin-top: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/catalog/cat-desktop@2x.png");
+      }
     }
   }
 
