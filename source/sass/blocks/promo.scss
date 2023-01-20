@@ -34,7 +34,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-nav/index-background-desktop.png");
+    background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -44,16 +44,25 @@
     top: 0;
     left: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
 
     @media (min-width: $desktop-width) {
       display: block;
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop.png");
       width: 50%;
       height: 694px;
       top: 0;
       left: 50%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop@2x.png");
+      }
     }
   }
 }
