@@ -266,6 +266,20 @@
   color: $black-color;
   text-decoration: none;
 
+  &:hover {
+    &::before {
+      background-image: url("../img/main-container/program/arrow-long.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      background-image: url("../img/main-container/program/arrow-long.svg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;

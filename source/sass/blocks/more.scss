@@ -68,4 +68,13 @@
   border: none;
   background: $basic-gray-color;
   width: 100%;
+
+  &:hover {
+    background: $grey-color-3;
+  }
+
+  &:active {
+    background: $grey-color-3;
+    opacity: 0.3;
+  }
 }

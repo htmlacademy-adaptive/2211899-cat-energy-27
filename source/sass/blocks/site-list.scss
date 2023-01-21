@@ -89,6 +89,10 @@
   color: $black-color;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 133%;

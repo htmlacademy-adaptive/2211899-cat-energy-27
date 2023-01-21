@@ -174,25 +174,35 @@
                   <label class="form__label form__label--contacts" for="email-selection"
                     >E-mail:*</label
                   >
-                  <input
+                  <p class="form__input-wrapper">
+                    <input
                     class="form__input"
                     type="email"
                     id="email-selection"
                     name="email-selection"
                     placeholder="Введите email"
-                  />
+                    />
+                    <svg class="form__input-icon form__input-icon--email" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#email"></use>
+                    </svg>
+                  </p>
                 </li>
                 <li class="form__list-item form__list-item--contacts-phone">
                   <label class="form__label form__label--contacts" for="phone-selection"
                     >Телефон:*</label
                   >
-                  <input
-                    class="form__input"
-                    type="tel"
-                    id="phone-selection"
-                    name="phone-selection"
-                    placeholder="Введите телефон"
-                  />
+                  <p class="form__input-wrapper">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      id="phone-selection"
+                      name="phone-selection"
+                      placeholder="Введите телефон"
+                    />
+                    <svg class="form__input-icon form__input-icon--phone" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                  </p>
                 </li>
               </ul>
             </fieldset>
@@ -292,51 +302,54 @@
 
     <!--Подвал-->
     <footer class="main-footer">
-      <a class="main-footer__logo logo" href="">
-        <img class="logo__img" src="./img/main-footer/footer-logo.svg" width="128" height="24" alt="Логотип CAT Energy." />
+      <a class="main-footer__logo" href="">
+        <span class="visually-hidden">Логотип CAT Energy</span>
+        <svg width="128" height="24" aria-hidden="true" focusable="false">
+          <use xlink:href="img/sprite.svg#footer-logo"></use>
+        </svg>
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <!-- Нужно добавить скрытый заголовок для повышения доступности.
-                Аналогично следует добавить ниже (самостоятельно) -->
-              <span class="visually-hidden">Мы в Вконтакте.</span>
-              <img src="./img/main-footer/vk.svg" width="28" height="22" alt="Социальная сеть VK." />
+            <a
+              class="social__link social__link-vkontakte"
+              href="https://vk.com/htmlacademy"
+            >
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg width="27" height="17" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Ютуб.</span>
-              <img
-                src="./img/main-footer/youtube.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть Youtube."
-              />
+            <a
+              class="social__link social__link-youtube"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <svg width="24" height="19" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграм.</span>
-              <img
-                src="./img/main-footer/telegram.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть Telegram."
-              />
+            <a
+              class="social__link social__link-telegram"
+              href="https://t.me/htmlacademy"
+            >
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <svg width="20" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <img
-          src="./img/main-footer/html-academy.svg"
-          width="27"
-          height="34"
-          alt="Логотип html-academy."
-        />
+        <b class="copyright__text">HTML Academy</b>
+        <svg width="27" height="34" aria-hidden="true" focusable="false">
+          <use xlink:href="img/sprite.svg#html-academy"></use>
+        </svg>
       </div>
     </footer>
     <script src="js/index.js"></script>
