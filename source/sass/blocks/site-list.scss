@@ -91,6 +91,10 @@
 
   &:hover {
     opacity: 0.6;
+
+    &--active {
+      opacity: 1;
+    }
   }
 
   @media (min-width: $tablet-width) {

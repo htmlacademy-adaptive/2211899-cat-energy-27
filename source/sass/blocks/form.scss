@@ -361,22 +361,20 @@
   color: $grey-color;
   padding: 0 40px 0 20px;
   height: 45px;
-  border: 1px solid $grey-color-4;
+  outline: 1px solid $grey-color-4;
+  border: 0;
   flex-grow: 1;
 
   &:hover {
-    border: 1px solid $special-grey;
+    outline: 1px solid $special-grey;
   }
 
   &:focus {
-    border: 1px solid $grey-color;
-    border-radius: 0;
+    outline: 1px solid $grey-color;
   }
 
-  &:focus + svg {
-    .svg__stroke {
-      stroke: $main-color;
-    }
+  &--stroke:focus + svg {
+    stroke: $main-color;
   }
 
   &--error {
@@ -401,6 +399,11 @@
   display: block;
   fill: none;
   right: 18px;
+  stroke: $grey-color-2;
+
+  &--error {
+    stroke: $status-red;
+  }
 }
 
 .form__radio {
@@ -487,6 +490,21 @@
   align-items: center;
   user-select: none;
 
+  &:hover {
+    &::before {
+      border: 1px solid $grey-color-5;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      border: 1px solid $grey-color-5;
+    }
+  }
+
+
   &::before {
     content: " ";
     display: inline-block;
@@ -554,7 +572,7 @@
   width: 100%;
   min-height: 150px;
   padding: 10px 12px 0 15px;
-  border: 1px solid $special-grey;
+  outline: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     width: 631px;

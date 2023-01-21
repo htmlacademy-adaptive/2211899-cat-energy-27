@@ -46,6 +46,25 @@
   }
 }
 
+.main-footer__logo-name {
+  fill: $color-footer-logo;
+
+  &:hover {
+    fill: $grey-color-6;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    fill: $grey-color-6;
+    opacity: 0.6;
+  }
+
+  &:active {
+    fill: $grey-color-7;
+    opacity: 0.3;
+  }
+}
+
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;

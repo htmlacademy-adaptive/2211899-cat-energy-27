@@ -37,3 +37,20 @@
     margin: 0;
   }
 }
+
+.social__link-icon {
+  fill: $gray-range-color;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: $main-color;
+    opacity: 0.3;
+  }
+}
