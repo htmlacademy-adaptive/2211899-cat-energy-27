@@ -15,7 +15,7 @@
   <body class="page__body">
     <!--Шапка-->
     <header class="main-header">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -58,7 +58,7 @@
           <span class="visually-hidden">Меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active-main">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link site-list__link--white-color">Главная</a>
           </li>
           <li class="site-list__item">
@@ -255,6 +255,15 @@
           <div class="range__button-wrapper">
             <button class="range__button">
               <span class="visually-hidden">Кнопка контроля диапазона</span>
+              <svg
+                class="range__button-arrow"
+                width="24"
+                height="18"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="img/sprite.svg#range"></use>
+              </svg>
             </button>
             <div class="range__scale"></div>
           </div>

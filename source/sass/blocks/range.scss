@@ -75,19 +75,46 @@
 
 .range__button {
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: $white-color;
   border: 2px solid $gray-range-color;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%23666666'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%23666666'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
+
+  &:hover {
+    svg {
+      fill: $main-color;
+    }
+
+    border: 2px solid $main-color;
+  }
+
+  &:hover + .range__scale {
+    background: $main-color;
+  }
+
+  &:focus {
+    svg {
+      fill: $green-special-scale;
+    }
+
+    border: 2px solid $green-special-scale;
+  }
+
+  &:focus + .range__scale {
+    background: $green-special-scale;
+  }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     top: 40%;
   }
+}
+
+.range__button-arrow {
+  fill: $gray-range-color;
 }
 
 .range__scale {
