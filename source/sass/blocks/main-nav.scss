@@ -90,29 +90,3 @@
     }
   }
 }
-/*
-.main-nav {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    margin: 0;
-  }
-}
-
-
-.main-nav__button {
-
-  &:focus + .main-nav__list {
-    display: block;
-  }
-
-  &:focus {
-    background-color: inherit;
-    background-image: url("../img/main-header/menu.svg");
-    background-position: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-*/

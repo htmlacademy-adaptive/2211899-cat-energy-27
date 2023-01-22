@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <!--Шапка-->
     <header class="main-header">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./img/main-header/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/main-header/logo-tablet.svg">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/main-header/logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/main-header/logo-tablet.svg"
+          />
           <img
-          class="logo__image logo__image--logo-icon"
-          src="./img/main-header/logo-cat.svg"
-          width="34"
-          height="38"
-          alt="Логотип «Кэт энерджи»."
-        />
+            class="logo__image logo__image--logo-icon"
+            src="./img/main-header/logo-cat.svg"
+            width="34"
+            height="38"
+            alt="Логотип «Кэт энерджи»."
+          />
         </picture>
         <picture>
-          <source media="(min-width: 1440px)" srcset="./img/main-header/logo-name-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/main-header/logo-name-tablet.svg">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/main-header/logo-name-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/main-header/logo-name-tablet.svg"
+          />
           <img
             class="logo__image logo__image--logo-name"
             src="./img/main-header/logo-name.svg"
@@ -44,7 +58,7 @@
           <span class="visually-hidden">Меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active-main">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link site-list__link--white-color">Главная</a>
           </li>
           <li class="site-list__item">
@@ -75,15 +89,27 @@
             <p class="promo__intro">Занялся собой? Займись котом!</p>
           </div>
           <picture>
-            <source media="(min-width: 1440px)" srcset="./img/main-container/promo/cat_chicken-desktop.png 1x, ./img/main-container/promo/cat_chicken-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/main-container/promo/cat_chicken-tablet.png 1x, ./img/main-container/promo/cat_chicken-tablet@2x.png 2x">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/main-container/promo/cat_chicken-desktop.png    1x,
+                ./img/main-container/promo/cat_chicken-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/main-container/promo/cat_chicken-tablet.png    1x,
+                ./img/main-container/promo/cat_chicken-tablet@2x.png 2x
+              "
+            />
             <img
-            class="promo__image"
-            src="./img/main-container/promo/cat_chicken.png"
-            width="280"
-            height="270"
-            alt="Cat energy pro."
-          />
+              class="promo__image"
+              src="./img/main-container/promo/cat_chicken.png"
+              width="280"
+              height="270"
+              alt="Cat energy pro."
+            />
           </picture>
           <a class="promo__button button" href="#">Подобрать программу</a>
         </div>
@@ -177,8 +203,20 @@
           <div class="range__image-wrapper">
             <figure class="range__figure range__figure--before">
               <picture>
-                <source media="(min-width: 1440px)" srcset="./img/main-container/example/cat-tablet.png 1x, ./img/main-container/example/cat-tablet@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/main-container/example/cat-tablet.png 1x, ./img/main-container/example/cat-tablet@2x.png 2x">
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/main-container/example/cat-tablet.png    1x,
+                    ./img/main-container/example/cat-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/main-container/example/cat-tablet.png    1x,
+                    ./img/main-container/example/cat-tablet@2x.png 2x
+                  "
+                />
                 <img
                   class="range__image"
                   src="./img/main-container/example/cat.png"
@@ -190,21 +228,42 @@
             </figure>
             <figure class="range__figure range__figure--after">
               <picture>
-                <source media="(min-width: 1440px)" srcset="./img/main-container/example/cat2-tablet.png 1x, ./img/main-container/example/cat2-tablet@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/main-container/example/cat2-tablet.png 1x, ./img/main-container/example/cat2-tablet@2x.png 2x">
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/main-container/example/cat2-tablet.png    1x,
+                    ./img/main-container/example/cat2-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/main-container/example/cat2-tablet.png    1x,
+                    ./img/main-container/example/cat2-tablet@2x.png 2x
+                  "
+                />
                 <img
-                class="range__image"
-                src="./img/main-container/example/cat2.png"
-                width="140"
-                height="256"
-                alt="Картинка кота."
-              />
+                  class="range__image"
+                  src="./img/main-container/example/cat2.png"
+                  width="140"
+                  height="256"
+                  alt="Картинка кота."
+                />
               </picture>
             </figure>
           </div>
           <div class="range__button-wrapper">
             <button class="range__button">
               <span class="visually-hidden">Кнопка контроля диапазона</span>
+              <svg
+                class="range__button-arrow"
+                width="24"
+                height="18"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="img/sprite.svg#range"></use>
+              </svg>
             </button>
             <div class="range__scale"></div>
           </div>
@@ -213,6 +272,7 @@
 
       <!--Контакты-->
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__offer">
             Приглашаем<br />к сотрудничеству<br />дилеров!
@@ -242,12 +302,16 @@
     <!--Подвал-->
     <footer class="main-footer">
       <a class="main-footer__logo" href="">
-        <img
-          src="./img/main-footer/footer-logo.svg"
+        <span class="visually-hidden">Логотип CAT Energy</span>
+        <svg
+          class="main-footer__logo-name"
           width="128"
           height="24"
-          alt="Логотип CAT Energy."
-        />
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="img/sprite.svg#footer-logo"></use>
+        </svg>
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -256,12 +320,16 @@
               class="social__link social__link-vkontakte"
               href="https://vk.com/htmlacademy"
             >
-              <img
-                src="./img/main-footer/vk.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть VK."
-              />
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg
+                class="social__link-icon"
+                width="27"
+                height="17"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
@@ -269,12 +337,16 @@
               class="social__link social__link-youtube"
               href="https://www.youtube.com/user/htmlacademyru"
             >
-              <img
-                src="./img/main-footer/youtube.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть Youtube."
-              />
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <svg
+                class="social__link-icon"
+                width="24"
+                height="19"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
@@ -282,25 +354,32 @@
               class="social__link social__link-telegram"
               href="https://t.me/htmlacademy"
             >
-              <img
-                src="./img/main-footer/telegram.svg"
-                width="28"
-                height="22"
-                alt="Социальная сеть Telegram."
-              />
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <svg
+                class="social__link-icon"
+                width="20"
+                height="18"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">HTML Academy</b>
-        <img
-          src="./img/main-footer/html-academy.svg"
+      <a class="main-footer__copyright copyright" href="#">
+        <p class="copyright__text">HTML Academy</p>
+        <svg
+          class="copyright__icon"
           width="27"
           height="34"
-          alt="Логотип html-academy."
-        />
-      </div>
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="img/sprite.svg#html-academy"></use>
+        </svg>
+      </a>
     </footer>
     <script src="js/index.js"></script>
   </body>
