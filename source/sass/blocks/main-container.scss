@@ -3,7 +3,7 @@
 .main-container__catalog {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 58px 8px 30px;
   gap: 20px;
 
   @media (min-width: $tablet-width) {

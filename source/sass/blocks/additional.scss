@@ -1,10 +1,10 @@
 @use "./variables.scss" as *;
 
 .additional {
-  padding: 0 20px 54px 20px;
+  padding: 0 20px 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 76px 30px;
+    padding: 0 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
   font-size: 24px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   padding-right: 21px;
 
   &::after {
@@ -57,8 +57,9 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 100%;
-    padding-left: 31px;
+    padding-left: 37px;
     padding-right: 36px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {

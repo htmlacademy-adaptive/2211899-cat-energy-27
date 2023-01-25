@@ -11,6 +11,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+  }
 }
 
 .copyright__text {
@@ -28,7 +32,7 @@
     font-size: 16px;
     line-height: 19px;
     color: $grey-color;
-    margin-right: 23px;
+    margin-right: 27px;
   }
 }
 

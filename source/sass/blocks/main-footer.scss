@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 58px 30px 55px 30px;
   }
 
@@ -39,11 +40,18 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    width: 145px;
+    height: 26px;
   }
 }
 
 .main-footer__logo-name {
   fill: $color-footer-logo;
+
+  @media (min-width: $tablet-width) {
+    width: 142.82px;
+    height: 26.23px;
+  }
 
   &:hover {
     fill: $grey-color-6;

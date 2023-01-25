@@ -11,11 +11,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    padding: 56px 80px;
+    padding: 60px 80px;
     width: 565px;
     z-index: 2;
     left: 110px;
-    bottom: 276px;
+    bottom: 300px;
   }
 }
 
@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 125%;
   text-transform: uppercase;
   color: $black-color;
   margin: 0;

@@ -4,14 +4,14 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    min-height: 613px;
+    min-height: 662px;
     background-image: linear-gradient($white-color 30%, $basic-gray-color 30%);
   }
 
   @media (min-width: $desktop-width) {
     min-height: 512px;
     min-width: 560px;
-    background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
+    background-image: linear-gradient($white-color 15%, $basic-gray-color 15%);
   }
 }
 
@@ -71,6 +71,14 @@
   width: 100%;
   height: 100%;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 92%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 98%;
+  }
 }
 
 .range__button {
