@@ -33,7 +33,7 @@
             alt="Логотип «Кэт энерджи»."
           />
         </picture>
-        <picture>
+        <picture class="logo__name-wrapper">
           <source
             media="(min-width: 1440px)"
             srcset="./img/main-header/logo-name-desktop.svg"
@@ -193,11 +193,11 @@
                   >
                   <p class="form__input-wrapper">
                     <input
-                      class="form__input form__input--stroke"
+                      class="form__input form__input--stroke form__input--contacts"
                       type="email"
                       id="email-selection"
                       name="email-selection"
-                      placeholder="Введите email"
+                      placeholder="kuklachev@gmail.com"
                     />
                     <svg
                       class="form__input-icon form__input-icon--email"
@@ -218,11 +218,11 @@
                   >
                   <p class="form__input-wrapper">
                     <input
-                      class="form__input form__input--stroke form__input--error"
+                      class="form__input form__input--stroke form__input--contacts"
                       type="tel"
                       id="phone-selection"
                       name="phone-selection"
-                      placeholder="Введите телефон"
+                      placeholder="8 (960) 900-60-90"
                     />
                     <svg
                       class="form__input-icon form__input-icon--phone"
@@ -253,7 +253,7 @@
             ></textarea>
           </div>
           <fieldset class="form__fieldset form__fieldset--aditionally">
-            <h2 class="form__section-title">Дополнительно</h2>
+            <h2 class="form__section-title form__section-title--aditionally">Дополнительно</h2>
             <ul class="form__list form__list--aditionally">
               <li class="form__list-item form__list-item--aditionally">
                 <input

@@ -41,4 +41,12 @@
       height: 22px;
     }
   }
+
+  .logo__name-wrapper {
+    padding-top: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -3px;
+    }
+  }
 }

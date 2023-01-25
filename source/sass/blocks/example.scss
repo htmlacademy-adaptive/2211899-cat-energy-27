@@ -5,19 +5,20 @@
   padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 58px 0 0 0;
     background-color: $white-color;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 38px 0 0;
     background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
   }
 }
 
 .example__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,8 +50,14 @@
 
 .example__paragraph {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 17px;
   color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 60px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
@@ -74,15 +81,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 53%;
     justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 85%;
     justify-content: flex-start;
     margin-bottom: 55px;
   }
@@ -96,11 +103,16 @@
   position: relative;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  padding: 15px 25px 17px 22px;
+  padding: 15px 10px 17px 12px;
 
   @media (min-width: $tablet-width) {
     gap: 60px;
-    padding: 15px 30px 20px;
+    padding: 12px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
+    padding: 24px 30px 20px;
   }
 }
 
@@ -113,8 +125,9 @@
   color: $black-color;
   text-align: center;
   margin-bottom: 8px;
+  text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 123%;
     margin-bottom: 0;
@@ -166,10 +179,10 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: flex-end;
     align-items: end;
     font-size: 20px;
     line-height: 100%;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
