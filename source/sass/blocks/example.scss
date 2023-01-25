@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 38px 0 0;
-    background-image: linear-gradient($white-color 20%, $basic-gray-color 20%);
+    background-image: linear-gradient($white-color 26%, $basic-gray-color 26%);
   }
 }
 
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 145px;
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 436px;
+    max-width: 433px;
     font-size: 16px;
     line-height: 150%;
   }

@@ -11,6 +11,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -73,7 +75,7 @@
       <section class="catalog-container">
         <h1 class="catalog-container__title">Каталог продукции</h1>
         <ul class="catalog-container__catalog catalog">
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--top">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -119,9 +121,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--top">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -167,11 +169,9 @@
                 </dl>
               </div>
             </div>
-            <button class="catalog__button button" type="button">
-              Заказать
-            </button>
+            <a class="catalog__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--middle">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -190,7 +190,7 @@
                     "
                   />
                   <img
-                    class="catalog__item-image catalog__item-image--small"
+                    class="catalog__item-image catalog__item-image--fish-500"
                     src="./img/catalog/fish-500.png"
                     srcset="./img/catalog/fish-500@2x.png 2x"
                     width="68"
@@ -217,11 +217,9 @@
                 </dl>
               </div>
             </div>
-            <button class="catalog__button button" type="button">
-              Заказать
-            </button>
+            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--middle">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -267,11 +265,9 @@
                 </dl>
               </div>
             </div>
-            <button class="catalog__button button" type="button">
-              Заказать
-            </button>
+            <a class="catalog__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--bottom">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -317,11 +313,9 @@
                 </dl>
               </div>
             </div>
-            <button class="catalog__button button" type="button">
-              Заказать
-            </button>
+            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--bottom">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -367,11 +361,9 @@
                 </dl>
               </div>
             </div>
-            <button class="catalog__button button" type="button">
-              Заказать
-            </button>
+            <a class="catalog__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--rise">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
@@ -417,7 +409,7 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
           </li>
           <li class="catalog__item more catalog__item--more">
             <p class="more__title">Показать еще 100500 товаров</p>
@@ -458,7 +450,7 @@
               <div class="product-list__item-wrapper">
                 <h3 class="product-list__title">Молоко</h3>
                 <dl class="product-list__wrapper">
-                  <dt class="product-list__specifications">1 литров</dt>
+                  <dt class="product-list__specifications">1 литр</dt>
                   <dd class="product-list__options">100 ₽</dd>
                 </dl>
               </div>
@@ -516,21 +508,29 @@
     <footer class="main-footer">
       <a class="main-footer__logo" href="">
         <span class="visually-hidden">Логотип CAT Energy</span>
-        <svg
-          class="main-footer__logo-name"
-          width="128"
-          height="24"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
-        </svg>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/main-footer/footer-logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/main-footer/footer-logo-tablet.svg"
+          />
+          <img
+            class="main-footer__logo-name"
+            src="./img/main-footer/footer-logo.svg"
+            width="34"
+            height="38"
+            alt="Логотип «Кэт энерджи»."
+          />
+        </picture>
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a
-              class="social__link social__link-vkontakte"
+              class="social__link social__link--vkontakte"
               href="https://vk.com/htmlacademy"
             >
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -547,7 +547,7 @@
           </li>
           <li class="social__item">
             <a
-              class="social__link social__link-youtube"
+              class="social__link social__link--youtube"
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <span class="visually-hidden">Мы в Ютубе</span>
@@ -564,7 +564,7 @@
           </li>
           <li class="social__item">
             <a
-              class="social__link social__link-telegram"
+              class="social__link social__link--telegram"
               href="https://t.me/htmlacademy"
             >
               <span class="visually-hidden">Мы в Телеграме</span>

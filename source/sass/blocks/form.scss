@@ -39,6 +39,7 @@
     line-height: 150%;
     margin-bottom: 66px;
     max-width: 323px;
+    margin-left: 2px;
   }
 }
 
@@ -325,11 +326,17 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 150%;
+    margin-top: -3px;
+    margin-left: 1px;
   }
 
   &--main {
     color: $grey-color;
     white-space: nowrap;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 15px;
+    }
   }
 
   &--radio {

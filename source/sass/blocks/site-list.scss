@@ -5,6 +5,10 @@
   padding: 0;
   list-style-type: none;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 -5px 0 0;
+  }
+
   &--inner .site-list__item--active {
     @media (min-width: $tablet-width) {
       &::before {

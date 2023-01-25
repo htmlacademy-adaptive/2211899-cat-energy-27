@@ -90,6 +90,8 @@
 
     &::after {
       position: absolute;
+      font-family: $font-secondary;
+      font-style: normal;
       font-size: 280px;
       line-height: 280px;
       color: $basic-gray-color;
