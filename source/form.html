@@ -11,8 +11,20 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body">
     <!--Шапка-->
@@ -255,7 +267,9 @@
             ></textarea>
           </div>
           <fieldset class="form__fieldset form__fieldset--aditionally">
-            <h2 class="form__section-title form__section-title--aditionally">Дополнительно</h2>
+            <h2 class="form__section-title form__section-title--aditionally">
+              Дополнительно
+            </h2>
             <ul class="form__list form__list--aditionally">
               <li class="form__list-item form__list-item--aditionally">
                 <input
@@ -344,6 +358,26 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <figure class="map__img-wrapper">
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/main-container/map/map-desktop.webp    1x,
+                ./img/main-container/map/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./img/main-container/map/map-tablet.webp    1x,
+                ./img/main-container/map/map-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="./img/main-container/map/map.webp"
+            />
             <source
               media="(min-width: 1440px)"
               srcset="
