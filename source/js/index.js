@@ -13,3 +13,8 @@ navButton.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+let mapImage = document.querySelector('.map__img-wrapper');
+if(mapImage) {
+  mapImage.classList.add('visually-hidden');
+}

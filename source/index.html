@@ -10,14 +10,26 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body">
     <!--Шапка-->
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
+      <div class="main-header__logo logo logo--curent">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -52,7 +64,7 @@
             alt="Магазин «Кэт энерджи»."
           />
         </picture>
-      </a>
+      </div>
 
       <!--Навигация-->
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -118,26 +130,28 @@
       </section>
 
       <!--Каталог программ-->
-      <section class="main-container__catalog">
+      <section class="main-container__catalog catalog-container">
         <h2 class="visually-hidden">Программы питания для кота</h2>
-        <div class="catalog__program">
-          <h3 class="catalog__name-program">Похудение</h3>
-          <p class="catalog__description">
+        <div class="catalog-container__program">
+          <h3 class="catalog-container__name-program">Похудение</h3>
+          <p class="catalog-container__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
             сбросить лишний вес.
           </p>
-          <a class="catalog__link" href="">Каталог slim</a>
+          <a class="catalog-container__link" href="">Каталог slim</a>
         </div>
-        <div class="catalog__program">
-          <h3 class="catalog__name-program catalog__name-program--aftercat">
+        <div class="catalog-container__program">
+          <h3
+            class="catalog-container__name-program catalog-container__name-program--aftercat"
+          >
             Набор массы
           </h3>
-          <p class="catalog__description">
+          <p class="catalog-container__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="catalog__link" href="">Каталог pro</a>
+          <a class="catalog-container__link" href="">Каталог pro</a>
         </div>
       </section>
 
@@ -291,6 +305,31 @@
       <!--Карта-->
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <figure class="map__img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/main-container/map/map-desktop.png    1x,
+                ./img/main-container/map/map-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/main-container/map/map-tablet.png    1x,
+                ./img/main-container/map/map-tablet@2x.png 2x
+              "
+            />
+            <img
+              class="map__img"
+              src="./img/main-container/map/map.png"
+              width="320"
+              height="362"
+              alt="Карта с отметкой магазина."
+            />
+          </picture>
+        </figure>
         <iframe
           class="map__location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18996.122622163773!2d30.31752833801612!3d59.96994430097972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1673340440266!5m2!1sen!2sru"
@@ -305,21 +344,29 @@
     <footer class="main-footer">
       <a class="main-footer__logo" href="">
         <span class="visually-hidden">Логотип CAT Energy</span>
-        <svg
-          class="main-footer__logo-name"
-          width="128"
-          height="24"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
-        </svg>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/main-footer/footer-logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/main-footer/footer-logo-tablet.svg"
+          />
+          <img
+            class="main-footer__logo-name"
+            src="./img/main-footer/footer-logo.svg"
+            width="34"
+            height="38"
+            alt="Логотип «Кэт энерджи»."
+          />
+        </picture>
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a
-              class="social__link social__link-vkontakte"
+              class="social__link social__link--vkontakte"
               href="https://vk.com/htmlacademy"
             >
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -336,7 +383,7 @@
           </li>
           <li class="social__item">
             <a
-              class="social__link social__link-youtube"
+              class="social__link social__link--youtube"
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <span class="visually-hidden">Мы в Ютубе</span>
@@ -353,7 +400,7 @@
           </li>
           <li class="social__item">
             <a
-              class="social__link social__link-telegram"
+              class="social__link social__link--telegram"
               href="https://t.me/htmlacademy"
             >
               <span class="visually-hidden">Мы в Телеграме</span>

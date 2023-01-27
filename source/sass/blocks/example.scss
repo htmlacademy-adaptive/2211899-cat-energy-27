@@ -3,16 +3,19 @@
 .example {
   background-color: $basic-gray-color;
   padding: 25px 20px 40px 20px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 58px 0 0 0;
     background-color: $white-color;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 38px 0 0;
     background-image: linear-gradient($white-color 26%, $basic-gray-color 26%);
+    width: $desktop-width;
   }
 }
 

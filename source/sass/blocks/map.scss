@@ -24,3 +24,16 @@
     height: 400px;
   }
 }
+
+.map__img {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    width: 1440px;
+    height: 400px;
+  }
+}

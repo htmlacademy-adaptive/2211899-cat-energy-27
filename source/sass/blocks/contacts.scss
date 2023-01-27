@@ -4,9 +4,11 @@
   display: flex;
   padding: 26px 20px;
   background: $white-color;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +18,14 @@
     z-index: 2;
     left: 110px;
     bottom: 300px;
+
+    &--gray {
+      background: $basic-gray-color;
+
+      @media (min-width: $desktop-width) {
+        background: $white-color;
+      }
+    }
   }
 }
 
