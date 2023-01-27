@@ -2,15 +2,44 @@
 
 .promo {
   padding: 0;
+  width: 320;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     min-height: 810px;
     padding: 0 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 550px;
-    padding: 0 100px;
+    padding: 0;
+    min-height: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      height: 302px;
+      width: 100%;
+      z-index: -2;
+      top: 0;
+      left: 0;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop.png");
+        width: 50%;
+        height: 694px;
+        top: 0;
+        left: 50%;
+
+        @media (min-resolution: 2dppx) {
+          background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop@2x.png");
+        }
+      }
+    }
   }
 }
 
@@ -18,12 +47,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     position: static;
     padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 550px;
+    padding: 0 100px;
   }
 
   &::before {
@@ -48,16 +81,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: block;
-      background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop.png");
-      width: 50%;
-      height: 694px;
-      top: 0;
-      left: 50%;
-
-      @media (min-resolution: 2dppx) {
-        background-image: linear-gradient($main-gradient-color, $main-gradient-color), url("../img/main-container/promo/cat-bg-desktop@2x.png");
-      }
+      display: none;
     }
   }
 }
@@ -140,7 +164,7 @@
 }
 
 .promo__button {
-  width: 100%;
+  width: 280px;
   font-size: 14px;
   text-decoration: none;
   margin: 3px auto 0;
