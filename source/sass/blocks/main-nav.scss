@@ -69,10 +69,11 @@
       content: "";
       position: absolute;
       width: 26px;
-      height: 2px;
+      height: 1px;
       border-radius: 2px;
       background: $black-color;
-      left: 0;
+      left: 2px;
+      top: 6px;
     }
 
     .main-nav__button::before {

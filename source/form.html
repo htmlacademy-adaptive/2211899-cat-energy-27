@@ -340,7 +340,7 @@
       <!--Контактные данные-->
       <section class="contacts">
         <h2 class="visually-hidden">Контактные данные</h2>
-        <div class="contacts__wrapper contacts__wrapper--gray">
+        <div class="contacts__wrapper contacts__wrapper--grey">
           <p class="contacts__offer">
             Приглашаем<br />к сотрудничеству<br />дилеров!
           </p>
@@ -401,97 +401,100 @@
             />
           </picture>
         </figure>
-        <iframe
-          class="map__location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18996.122622163773!2d30.31752833801612!3d59.96994430097972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1673340440266!5m2!1sen!2sru"
-          allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
-        >
-        </iframe>
       </section>
     </main>
 
     <!--Подвал-->
     <footer class="main-footer">
-      <a class="main-footer__logo" href="">
-        <span class="visually-hidden">Логотип CAT Energy</span>
-        <svg
-          class="main-footer__logo-name"
-          width="128"
-          height="24"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
-        </svg>
-      </a>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link-vkontakte"
-              href="https://vk.com/htmlacademy"
-            >
-              <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg
-                class="social__link-icon"
-                width="27"
-                height="17"
-                aria-hidden="true"
-                focusable="false"
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="">
+          <span class="visually-hidden">Логотип CAT Energy</span>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/main-footer/footer-logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/main-footer/footer-logo-tablet.svg"
+            />
+            <img
+              class="main-footer__logo-name"
+              src="./img/main-footer/footer-logo.svg"
+              width="128"
+              height="24"
+              alt="Логотип «Кэт энерджи»."
+            />
+          </picture>
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
               >
-                <use xlink:href="img/sprite.svg#vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link-youtube"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
-              <span class="visually-hidden">Мы в Ютубе</span>
-              <svg
-                class="social__link-icon"
-                width="24"
-                height="19"
-                aria-hidden="true"
-                focusable="false"
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg
+                  class="social__link-icon"
+                  width="27"
+                  height="17"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
               >
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link-telegram"
-              href="https://t.me/htmlacademy"
-            >
-              <span class="visually-hidden">Мы в Телеграме</span>
-              <svg
-                class="social__link-icon"
-                width="20"
-                height="18"
-                aria-hidden="true"
-                focusable="false"
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg
+                  class="social__link-icon"
+                  width="24"
+                  height="19"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
               >
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+                <span class="visually-hidden">Мы в Телеграме</span>
+                <svg
+                  class="social__link-icon"
+                  width="20"
+                  height="18"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="main-footer__copyright copyright" href="#">
+          <p class="copyright__text">HTML Academy</p>
+          <svg
+            class="copyright__icon"
+            width="27"
+            height="34"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
       </div>
-      <a class="main-footer__copyright copyright" href="#">
-        <p class="copyright__text">HTML Academy</p>
-        <svg
-          class="copyright__icon"
-          width="27"
-          height="34"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <use xlink:href="img/sprite.svg#html-academy"></use>
-        </svg>
-      </a>
     </footer>
     <script src="js/index.js"></script>
   </body>

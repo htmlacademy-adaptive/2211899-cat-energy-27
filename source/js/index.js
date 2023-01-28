@@ -14,7 +14,3 @@ navButton.addEventListener('click', function () {
   }
 });
 
-let mapImage = document.querySelector('.map__img-wrapper');
-if(mapImage) {
-  mapImage.classList.add('visually-hidden');
-}

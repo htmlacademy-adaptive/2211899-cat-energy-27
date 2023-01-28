@@ -6,20 +6,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px 18px 20px;
-  margin: 0;
+  padding: 10px 20px 14px;
+  margin: 0 auto;
   max-width: 320px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 36px 34px 54px 32px;
     display: flex;
     justify-content: space-between;
     max-width: $tablet-width;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 51px 110px 106px;
+    padding: 50px 110px 67px;
     max-width: $desktop-width;
+    width: 100%;
   }
 }
 
