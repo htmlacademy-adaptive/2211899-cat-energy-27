@@ -52,17 +52,36 @@
     }
 
     .main-nav__button {
+      position: relative;
       width: 26px;
       height: 18px;
       border: 0;
       padding: 0;
       background-color: inherit;
-      background-image: url("../img/main-header/menu.svg");
-      background-position: center;
 
       @media (min-width: $tablet-width) {
         display: none;
       }
+    }
+
+    .main-nav__button::before,
+    .main-nav__button::after {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 1px;
+      border-radius: 2px;
+      background: $black-color;
+      left: 2px;
+      top: 6px;
+    }
+
+    .main-nav__button::before {
+      transform: rotate(45deg);
+    }
+
+    .main-nav__button::after {
+      transform: rotate(-45deg);
     }
   }
 

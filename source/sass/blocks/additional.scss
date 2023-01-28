@@ -2,13 +2,18 @@
 
 .additional {
   padding: 0 20px 35px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 80px;
+    padding: 63px 30px 77px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 76px 110px;
+    padding: 72px 110px 85px;
+    max-width: $desktop-width;
   }
 }
 
@@ -30,7 +35,7 @@
   font-size: 24px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding-right: 21px;
 
   &::after {
@@ -59,11 +64,12 @@
     line-height: 100%;
     padding-left: 37px;
     padding-right: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
     padding-right: 35px;
+    margin-left: -40px;
   }
 }

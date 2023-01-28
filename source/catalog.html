@@ -11,8 +11,20 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -80,6 +92,29 @@
               <div class="catalog__item-content">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/chicken-500-tablet.webp    1x,
+                      ./img/catalog/chicken-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/chicken-500-tablet.webp    1x,
+                      ./img/catalog/chicken-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/chicken-500.webp    1x,
+                      ./img/catalog/chicken-500@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 1440px)"
                     srcset="
                       ./img/catalog/chicken-500-tablet.png    1x,
@@ -94,7 +129,7 @@
                     "
                   />
                   <img
-                    class="catalog__item-image catalog__item-image--small"
+                    class="catalog__item-image catalog__item-image--small-chicken"
                     src="./img/catalog/chicken-500.png"
                     srcset="./img/catalog/chicken-500@2x.png 2x"
                     width="68"
@@ -121,12 +156,37 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#"
+              >Заказать</a
+            >
           </li>
           <li class="catalog__item catalog__item--top">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/chicken-100-tablet.webp    1x,
+                      ./img/catalog/chicken-100-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/chicken-100-tablet.webp    1x,
+                      ./img/catalog/chicken-100-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/chicken-100.webp    1x,
+                      ./img/catalog/chicken-100@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -176,6 +236,29 @@
               <div class="catalog__item-content">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/fish-500-tablet.webp    1x,
+                      ./img/catalog/fish-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/fish-500-tablet.webp    1x,
+                      ./img/catalog/fish-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/fish-500.webp    1x,
+                      ./img/catalog/fish-500@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 1440px)"
                     srcset="
                       ./img/catalog/fish-500-tablet.png    1x,
@@ -217,12 +300,37 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#"
+              >Заказать</a
+            >
           </li>
           <li class="catalog__item catalog__item--middle">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/fish-1000-tablet.webp    1x,
+                      ./img/catalog/fish-1000-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/fish-1000-tablet.webp    1x,
+                      ./img/catalog/fish-1000-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/fish-1000.webp   1x,
+                      ./img/catalog/fish-500@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -272,6 +380,29 @@
               <div class="catalog__item-content">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/buckwheat-500-tablet.webp    1x,
+                      ./img/catalog/buckwheat-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/buckwheat-500-tablet.webp    1x,
+                      ./img/catalog/buckwheat-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/buckwheat-500.webp    1x,
+                      ./img/catalog/buckwheat-500@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 1440px)"
                     srcset="
                       ./img/catalog/buckwheat-500-tablet.png    1x,
@@ -313,12 +444,37 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#"
+              >Заказать</a
+            >
           </li>
           <li class="catalog__item catalog__item--bottom">
             <div class="catalog__item-content-wrapper">
               <div class="catalog__item-content">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/buckwheat-1000-tablet.webp    1x,
+                      ./img/catalog/buckwheat-1000-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/buckwheat-1000-tablet.webp    1x,
+                      ./img/catalog/buckwheat-1000-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/buckwheat-1000.webp    1x,
+                      ./img/catalog/buckwheat-1000@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -368,6 +524,29 @@
               <div class="catalog__item-content">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/catalog/rice-500-tablet.webp    1x,
+                      ./img/catalog/rice-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/catalog/rice-500-tablet.webp    1x,
+                      ./img/catalog/rice-500-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/catalog/rice-500.webp    1x,
+                      ./img/catalog/rice-500@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 1440px)"
                     srcset="
                       ./img/catalog/rice-500-tablet.png    1x,
@@ -409,7 +588,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button catalog__button--small" href="#">Заказать</a>
+            <a class="catalog__button button catalog__button--small" href="#"
+              >Заказать</a
+            >
           </li>
           <li class="catalog__item more catalog__item--more">
             <p class="more__title">Показать еще 100500 товаров</p>
@@ -478,7 +659,7 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контактные данные</h2>
-        <div class="contacts__wrapper contacts__wrapper--gray">
+        <div class="contacts__wrapper contacts__wrapper--grey">
           <p class="contacts__offer">
             Приглашаем<br />к сотрудничеству<br />дилеров!
           </p>
@@ -496,6 +677,26 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <figure class="map__img-wrapper">
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/main-container/map/map-desktop.webp    1x,
+                ./img/main-container/map/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./img/main-container/map/map-tablet.webp    1x,
+                ./img/main-container/map/map-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="./img/main-container/map/map.webp"
+            />
             <source
               media="(min-width: 1440px)"
               srcset="
@@ -519,106 +720,100 @@
             />
           </picture>
         </figure>
-        <iframe
-          class="map__location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18996.122622163773!2d30.31752833801612!3d59.96994430097972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1673340440266!5m2!1sen!2sru"
-          allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
-        >
-        </iframe>
       </section>
     </main>
 
     <!--Подвал-->
     <footer class="main-footer">
-      <a class="main-footer__logo" href="">
-        <span class="visually-hidden">Логотип CAT Energy</span>
-        <picture>
-          <source
-            media="(min-width: 1440px)"
-            srcset="./img/main-footer/footer-logo-desktop.svg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./img/main-footer/footer-logo-tablet.svg"
-          />
-          <img
-            class="main-footer__logo-name"
-            src="./img/main-footer/footer-logo.svg"
-            width="34"
-            height="38"
-            alt="Логотип «Кэт энерджи»."
-          />
-        </picture>
-      </a>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-            >
-              <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg
-                class="social__link-icon"
-                width="27"
-                height="17"
-                aria-hidden="true"
-                focusable="false"
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="">
+          <span class="visually-hidden">Логотип CAT Energy</span>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/main-footer/footer-logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/main-footer/footer-logo-tablet.svg"
+            />
+            <img
+              class="main-footer__logo-name"
+              src="./img/main-footer/footer-logo.svg"
+              width="128"
+              height="24"
+              alt="Логотип «Кэт энерджи»."
+            />
+          </picture>
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
               >
-                <use xlink:href="img/sprite.svg#vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru"
-              aria-label=""
-            >
-              <span class="visually-hidden">Мы в Ютубе</span>
-              <svg
-                class="social__link-icon"
-                width="24"
-                height="19"
-                aria-hidden="true"
-                focusable="false"
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg
+                  class="social__link-icon"
+                  width="27"
+                  height="17"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
               >
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--telegram"
-              href="https://t.me/htmlacademy"
-            >
-              <span class="visually-hidden">Мы в Телеграме</span>
-              <svg
-                class="social__link-icon"
-                width="20"
-                height="18"
-                aria-hidden="true"
-                focusable="false"
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg
+                  class="social__link-icon"
+                  width="24"
+                  height="19"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
               >
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+                <span class="visually-hidden">Мы в Телеграме</span>
+                <svg
+                  class="social__link-icon"
+                  width="20"
+                  height="18"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="main-footer__copyright copyright" href="#">
+          <p class="copyright__text">HTML Academy</p>
+          <svg
+            class="copyright__icon"
+            width="27"
+            height="34"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
       </div>
-      <a class="main-footer__copyright copyright" href="#">
-        <p class="copyright__text">HTML Academy</p>
-        <svg
-          class="copyright__icon"
-          width="27"
-          height="34"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <use xlink:href="img/sprite.svg#html-academy"></use>
-        </svg>
-      </a>
     </footer>
     <script src="js/index.js"></script>
   </body>

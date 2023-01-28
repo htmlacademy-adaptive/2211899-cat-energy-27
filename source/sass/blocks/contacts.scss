@@ -4,11 +4,13 @@
   display: flex;
   padding: 26px 20px;
   background: $white-color;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
-    width: 768px;
+    padding: 59px 70px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,14 +19,16 @@
     width: 565px;
     z-index: 2;
     left: 110px;
-    bottom: 300px;
+    bottom: 276px;
+    max-width: 1440px;
+    height: 200px;
+  }
 
-    &--gray {
-      background: $basic-gray-color;
+  &--grey {
+    background: $basic-gray-color;
 
-      @media (min-width: $desktop-width) {
-        background: $white-color;
-      }
+    @media (min-width: $desktop-width) {
+      background: $white-color;
     }
   }
 }
@@ -89,8 +93,19 @@
 
 .contacts__address-wrapper {
   @media (min-width: $tablet-width) {
+    width: 100%;
+
     &:not(:last-of-type) {
-      margin-bottom: 19px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+
+    &:not(:last-of-type) {
+      width: 100px;
     }
   }
 }
