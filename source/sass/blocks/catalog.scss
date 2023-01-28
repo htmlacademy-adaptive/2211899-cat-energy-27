@@ -52,7 +52,7 @@
       height: 1px;
       background-color: $line-color;
       left: -30px;
-      bottom: 25px;
+      bottom: 17px;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -78,7 +78,7 @@
     }
 
     &--rise {
-      padding: 14px 36px 39px;
+      padding: 11px 36px 39px;
     }
 
     &--more {
@@ -200,18 +200,38 @@
 }
 
 .catalog__item-image {
+  &--small-chicken {
+    margin: 11px 0 0 35px;
+
+    @media (min-width: $tablet-width) {
+      margin: 24px 0 0 0;
+      width: 160px;
+      height: 173px;
+    }
+  }
+
   &--small {
-    margin: 25px 0 33px;
+    margin: 27px 0 0 35px;
+
+    @media (min-width: $tablet-width) {
+      margin: 25px 0 33px;
+    }
   }
 
   &--big {
-    margin: 0 0 32px;
+    margin: 6px 0 0 27px;
   }
 
   &--fish-500 {
-    margin: -2px 0 31px;
-    width: 161px;
-    height: 199px;
+    margin: 19px 0 8px 36px;
+    width: 67px;
+    height: 78px;
+
+    @media (min-width: $tablet-width) {
+      margin: -2px 0 31px;
+      width: 161px;
+      height: 199px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -224,9 +244,12 @@
     }
 
     &--big {
-      margin: 0 0 36px;
       width: 168px;
       height: 200px;
+
+      @media (min-width: $tablet-width) {
+        margin: -5px 0 36px 0;
+      }
     }
   }
 }

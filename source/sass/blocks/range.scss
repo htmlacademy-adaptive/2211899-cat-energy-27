@@ -11,7 +11,8 @@
   @media (min-width: $desktop-width) {
     min-height: 512px;
     min-width: 560px;
-    background-image: linear-gradient($white-color 15%, $basic-gray-color 15%);
+    background-image: linear-gradient($white-color 22%, $basic-gray-color 22%);
+    margin-top: -4px;
   }
 }
 
